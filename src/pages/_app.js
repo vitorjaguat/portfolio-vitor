@@ -3,6 +3,7 @@ import { appWithTranslation } from 'next-i18next';
 import Head from 'next/head';
 import { Signika_Negative } from '@next/font/google';
 import { useRouter } from 'next/router';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const signika = Signika_Negative({
   subsets: ['latin'],
@@ -47,9 +48,11 @@ const App = ({ Component, pageProps }) => {
         <meta property='og:type' content='article' />
         <meta property='og:locale' content='en_US' />
       </Head>
-      <main className={`${signika.variable} font-signika`}>
-        <Component {...pageProps} />
-      </main>
+      <ParallaxProvider>
+        <main className={`${signika.variable} font-signika`}>
+          <Component {...pageProps} />
+        </main>
+      </ParallaxProvider>
     </>
   );
 };

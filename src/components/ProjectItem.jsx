@@ -20,7 +20,7 @@ export default function ProjectItem({ title, backgroundImg, projectUrl }) {
         <p className='pb-4 pt-2 text-white text-center'>React JS</p>
         <Link href={projectUrl}>
           <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-            {t('project-item.more')}
+            {t('project-item.more')}mm
           </p>
         </Link>
       </div>

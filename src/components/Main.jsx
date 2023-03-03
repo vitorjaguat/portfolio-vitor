@@ -6,18 +6,18 @@ import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
 
 export default function Main(props) {
-  const bgParallax = useParallax({
-    easing: 'easeIn',
-    speed: 10,
-    // rootMargin: { bottom: 50, left: 0, right: 0, top: 700 },
-  });
+  // const bgParallax = useParallax({
+  //   easing: 'easeIn',
+  //   // speed: 10,
+  //   // rootMargin: { bottom: 50, left: 0, right: 0, top: 700 },
+  // });
   const { t } = useTranslation('common');
 
   return (
-    <>
+    <div className=''>
       <div
-        ref={bgParallax.ref}
-        className='z-[-1] w-full h-screen bg-[url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80")]'
+        // ref={bgParallax.ref}
+        className='z-[-1] w-full h-screen bg-gradient-to-b from-orange-400 to-orange-100 '
       ></div>
       <div
         id='home'
@@ -31,7 +31,7 @@ export default function Main(props) {
             </p>
             <h1 className='py-4 text-gray-700 text-5xl'>
               {t('home.hi')}
-              <span className='text-primary'>{t('home.name')}</span>
+              {/* <span className='text-primary'>{t('home.name')}</span> */}
             </h1>
             <h1 className='py-2 text-gray-700 text-4xl'>
               {t('home.subtitle')}
@@ -56,6 +56,6 @@ export default function Main(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

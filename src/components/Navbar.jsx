@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { GrFormClose } from 'react-icons/gr';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useTranslation } from 'next-i18next';
 
-export default function Navbar({ navColor }) {
+export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const { t } = useTranslation('common');
@@ -30,44 +31,44 @@ export default function Navbar({ navColor }) {
     <div
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-lg z-[100] ease-in duration-300 ' +
-            navColor
-          : 'fixed w-full h-20 z-[100] ease-in duration-200 ' + navColor
+          ? 'fixed w-full h-16 shadow-md z-[100] ease-in duration-300 '
+          : 'fixed w-full h-16 z-[100] ease-in duration-200 '
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/#home' scroll={false}>
-          <Image
+          {/* <Image
             src='/../public/assets/logoH2.png'
             alt='logo'
             width={50}
             height={50}
-          />
+          /> */}
+          <p className='font-bold text-orange-900'>vitorb.</p>
         </Link>
         <div>
           <ul className='hidden md:flex'>
             <Link href='/#home' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b text-[#999999]'>
+              <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.home')}
               </li>
             </Link>
             <Link href='/#about' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b text-[#999999]'>
+              <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.about')}
               </li>
             </Link>
             <Link href='/#skills' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b text-[#999999]'>
+              <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.skills')}
               </li>
             </Link>
             <Link href='/#projects' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b text-[#999999]'>
+              <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.projects')}
               </li>
             </Link>
             <Link href='/#contact' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b text-[#999999]'>
+              <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.contact')}
               </li>
             </Link>
@@ -78,42 +79,43 @@ export default function Navbar({ navColor }) {
         </div>
       </div>
 
+      {/* overlay */}
       <div
         className={
-          nav ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70' : ''
+          nav
+            ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70 ease-in transition-all duration-500'
+            : 'fixed left-0 top-0 opacity-0 w-full h-full bg-transparent z-[-2] ease-in transition-all duration-500'
         }
       >
+        {/* sidebar */}
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[45%] h-screen flex flex-col justify-between bg-orange-50 p-10 ease-in duration-500'
+              : 'fixed h-screen flex flex-col justify-between bg-orange-50 top-0 left-[-100%] p-10 ease-in duration-500'
           }
         >
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/#home' scroll={false}>
-                <Image
+                {/* <Image
                   src='/../public/assets/logoH2.png'
                   width={60}
                   height={35}
                   alt='logo'
-                />
+                /> */}
+                <p className='font-bold'>vitorb.</p>
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-md p-3 cursor-pointer'
+                className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer'
               >
-                <AiOutlineClose />
+                <GrFormClose size={20} />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Let's build something legendary together
-              </p>
-            </div>
           </div>
-          <div className='py-4 flex flex-col'>
+
+          <div className='flex flex-col justify-center'>
             <ul className='uppercase'>
               <Link href='/#home' scroll={false}>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
@@ -141,23 +143,24 @@ export default function Navbar({ navColor }) {
                 </li>
               </Link>
             </ul>
-            <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let's connect
-              </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                  <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                  <AiOutlineMail />
-                </div>
-                <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                  <BsFillPersonLinesFill />
-                </div>
+          </div>
+
+          <div className=''>
+            <p className='uppercase text-sm tracking-widest text-orange-700'>
+              JOIN ME AT
+            </p>
+            <div className='flex items-center justify-between my-4 w-full'>
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaLinkedinIn />
+              </div>
+              <div className='rounded-full bg-orange-300 shadow-s p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaGithub />
+              </div>
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <AiOutlineMail />
+              </div>
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <BsFillPersonLinesFill />
               </div>
             </div>
           </div>

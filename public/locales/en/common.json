@@ -5,5 +5,12 @@
     "skills": "skills",
     "projects": "projects",
     "contact": "contact"
+  },
+  "home": {
+    "title": "portfolio",
+    "hi": "Vitor Butkus",
+    "name": "Butkus",
+    "subtitle": "artist, webdev",
+    "text": ""
   }
 }

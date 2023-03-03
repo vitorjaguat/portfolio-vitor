@@ -8,7 +8,10 @@ export default function Skills() {
   const { t } = useTranslation('common');
 
   return (
-    <div id='skills' className='w-full p-2 py-20'>
+    <div
+      id='skills'
+      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-200'
+    >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-primary'>
           {t('skills.title')}
