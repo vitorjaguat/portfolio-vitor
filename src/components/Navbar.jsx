@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { GrFormClose } from 'react-icons/gr';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+// import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useTranslation } from 'next-i18next';
+import LanguageToggle from './LanguageToggle';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -31,8 +32,8 @@ export default function Navbar() {
     <div
       className={
         shadow
-          ? 'fixed w-full h-16 shadow-md z-[100] ease-in duration-300 '
-          : 'fixed w-full h-16 z-[100] ease-in duration-200 '
+          ? 'fixed w-full h-16 shadow-md ease-in duration-300 '
+          : 'fixed w-full h-16 ease-in duration-200'
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
@@ -76,6 +77,9 @@ export default function Navbar() {
           <div onClick={handleNav} className='md:hidden text-[#999999]'>
             <AiOutlineMenu size={25} />
           </div>
+        </div>
+        <div className='ml-10 text-sm uppercase'>
+          <LanguageToggle />
         </div>
       </div>
 
@@ -150,17 +154,17 @@ export default function Navbar() {
               JOIN ME AT
             </p>
             <div className='flex items-center justify-between my-4 w-full'>
-              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <FaLinkedinIn />
-              </div>
               <div className='rounded-full bg-orange-300 shadow-s p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
                 <FaGithub />
               </div>
               <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <AiOutlineMail />
+                <FaInstagram />
               </div>
               <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <BsFillPersonLinesFill />
+                <FaTelegramPlane />
+              </div>
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <AiOutlineMail />
               </div>
             </div>
           </div>

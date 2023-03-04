@@ -5,5 +5,12 @@
     "skills": "技能",
     "projects": "项目",
     "contact": "联系"
+  },
+  "home": {
+    "title": "portfolio",
+    "hi": "Vitor Butkus",
+    "name": "Butkus",
+    "subtitle": "艺术家、 前端开发者",
+    "text": ""
   }
 }

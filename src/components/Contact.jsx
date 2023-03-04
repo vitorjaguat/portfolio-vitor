@@ -1,6 +1,11 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTelegramPlane,
+} from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -32,19 +37,21 @@ export default function Contact() {
                 <p className='py-4'>{t('contact.text')}</p>
               </div>
               <div>
-                <p className='uppercase pt-8'>{t('contact.connect')}</p>
-                <div className='flex items-center justify-between py-4'>
-                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <FaLinkedinIn />
-                  </div>
+                <p className='uppercase pt-8 text-center'>
+                  {t('contact.connect')}
+                </p>
+                <div className='flex items-center justify-around py-4'>
                   <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                     <FaGithub />
                   </div>
                   <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <AiOutlineMail />
+                    <FaInstagram />
                   </div>
                   <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <BsFillPersonFill />
+                    <FaTelegramPlane />
+                  </div>
+                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                    <AiOutlineMail />
                   </div>
                 </div>
               </div>

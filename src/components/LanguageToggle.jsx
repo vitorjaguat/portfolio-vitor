@@ -26,19 +26,25 @@ const LanguageToggle = () => {
   //locale - Optional string, indicates locale of the new page
 
   return (
-    <div>
-      <button
-        className='p-1 mr-2 mb-6 text-sm'
+    <div className='flex justify-center text-orange-900 font-bold'>
+      <div
+        className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
         onClick={() => handleLanguageChange('en')}
       >
         EN
-      </button>
-      <button
-        className='p-1 text-sm'
+      </div>
+      <div
+        className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
         onClick={() => handleLanguageChange('pt')}
       >
         PT
-      </button>
+      </div>
+      <div
+        className='text-sm cursor-pointer px-1 hover:border-b'
+        onClick={() => handleLanguageChange('zh')}
+      >
+        中
+      </div>
     </div>
   );
 };

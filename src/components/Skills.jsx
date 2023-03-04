@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'next-i18next';
+import { SiNextdotjs } from 'react-icons/si';
+import { FaMarkdown } from 'react-icons/fa';
 
 export default function Skills() {
   const { ref: ref1, inView: inView1 } = useInView();
@@ -100,6 +102,29 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
+                  src='/../public/assets/skills/github1.png'
+                  width={64}
+                  height={64}
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>Github</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={ref2}
+            style={{
+              transform: inView1 ? 'none' : 'translateX(20%)',
+              opacity: inView1 ? 1 : 0,
+            }}
+            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+          >
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image
+                  alt='my skills'
                   src='/../public/assets/skills/react.png'
                   width={64}
                   height={64}
@@ -112,24 +137,19 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref1}
+            ref={ref2}
             style={{
-              transform: inView1 ? 'none' : 'translateX(-20%)',
+              transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
             }}
             className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
-                <Image
-                  alt='my skills'
-                  src='/../public/assets/skills/tailwind.png'
-                  width={64}
-                  height={64}
-                />
+                <SiNextdotjs size={64} />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Tailwind</h3>
+                <h3>Next.JS</h3>
               </div>
             </div>
           </div>
@@ -169,13 +189,36 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/github1.png'
+                  src='/../public/assets/skills/mongo.png'
                   width={64}
                   height={64}
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Github</h3>
+                <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={ref1}
+            style={{
+              transform: inView1 ? 'none' : 'translateX(-20%)',
+              opacity: inView1 ? 1 : 0,
+            }}
+            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+          >
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image
+                  alt='my skills'
+                  src='/../public/assets/skills/tailwind.png'
+                  width={64}
+                  height={64}
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>Tailwind</h3>
               </div>
             </div>
           </div>
@@ -192,13 +235,37 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/shopify.png'
+                  src='/../public/assets/skills/node.png'
                   width={64}
                   height={64}
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Shopify</h3>
+                <h3>NodeJS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={ref2}
+            style={{
+              transform: inView1 ? 'none' : 'translateX(20%)',
+              opacity: inView1 ? 1 : 0,
+            }}
+            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+          >
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                {/* <Image
+                  alt='my skills'
+                  src='/../public/assets/skills/node.png'
+                  width={64}
+                  height={64}
+                /> */}
+                <FaMarkdown color='#8f8f8f' size={64} />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>Markdown</h3>
               </div>
             </div>
           </div>

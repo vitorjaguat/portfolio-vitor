@@ -28,7 +28,7 @@ export default function About() {
       id='about'
       className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent'
     >
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-5 gap-8'>
+      <div className='max-w-[1240px] m-auto md:grid grid-cols-5 gap-8 z-[100]'>
         <div className='col-span-3 lg:pr-20'>
           <p className='uppercase text-xl tracking-widest text-primary'>
             {t('about.title')}
