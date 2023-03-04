@@ -8,9 +8,15 @@
   },
   "home": {
     "title": "portfolio",
-    "hi": "vitor butkus",
+    "hi": "Vitor Butkus",
     "name": "Butkus",
-    "subtitle": "artist, webdev",
-    "text": ""
+    "subtitle": "front-end webdev",
+    "text": "I can turn your ideas into reality by using the most modern and uptodate programming skills"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "who am I",
+    "small": "To begin the self-description is the hardest part...",
+    "p1": ""
   }
 }

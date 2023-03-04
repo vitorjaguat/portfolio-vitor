@@ -22,7 +22,7 @@ export default function Contact() {
         <h2 className='py-4'>{t('contact.subtitle')}</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-xl p-4'>
+          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-xl p-4 z-[100]'>
             <div className='lg:p-4 h-full'>
               <div>
                 <img
@@ -41,18 +41,29 @@ export default function Contact() {
                   {t('contact.connect')}
                 </p>
                 <div className='flex items-center justify-around py-4'>
-                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <FaGithub />
-                  </div>
-                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <FaInstagram />
-                  </div>
-                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <FaTelegramPlane />
-                  </div>
-                  <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                    <AiOutlineMail />
-                  </div>
+                  <a target='_blank' href='https://github.com/vitorjaguat'>
+                    <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a
+                    href='https://www.instagram.com/mtc.cultura'
+                    target='_blank'
+                  >
+                    <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                      <FaInstagram />
+                    </div>
+                  </a>
+                  <a href='https://t.me/jaguat' target='_blank'>
+                    <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                      <FaTelegramPlane />
+                    </div>
+                  </a>
+                  <a href='mailto:vitorbutkus@gmail.com'>
+                    <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                      <AiOutlineMail />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

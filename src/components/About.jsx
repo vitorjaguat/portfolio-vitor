@@ -37,6 +37,7 @@ export default function About() {
           <p className='py-2 text-gray-600'>{t('about.small')}</p>
           <p className='py-2 text-gray-600'>{t('about.p1')}</p>
           <p className='py-2 text-gray-600'>{t('about.p2')}</p>
+          <p className='py-2 text-gray-600'>{t('about.p3')}</p>
           <Link href='/#projects' scroll={false}>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
               {t('about.link')}
