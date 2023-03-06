@@ -36,7 +36,7 @@ export default function Navbar() {
           : 'fixed w-full h-16 ease-in duration-200'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+      <div className='flex justify-between items-center w-full h-[100%] px-2 2xl:px-16'>
         <Link href='/#home' scroll={false}>
           {/* <Image
             src='/../public/assets/logoH2.png'
@@ -88,7 +88,7 @@ export default function Navbar() {
         className={
           nav
             ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70 ease-in transition-all duration-500'
-            : 'fixed left-0 top-0 opacity-0 w-full h-full bg-transparent z-[-2] ease-in transition-all duration-500'
+            : 'fixed left-0 top-0 opacity-0 w-full h-full bg-transparent z-[-2] ease-in transition-all duration-500 hidden'
         }
       >
         {/* sidebar */}
