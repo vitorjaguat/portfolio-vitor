@@ -6,24 +6,46 @@ export default function ProjectItem({ title, backgroundImg, projectUrl }) {
   const { t } = useTranslation('common');
 
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-md shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#2a2a2a] to-[#7d7d7d]'>
-      <Image
-        className='rounded-xl group-hover:opacity-10'
-        src={backgroundImg}
-        alt={title}
-      />
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl text-white tracking-wider text-center'>
-          {title}
-        </h3>
-        {/* Can pass 'skills' prop and map through it! */}
-        <p className='pb-4 pt-2 text-white text-center'>React JS</p>
+    <div className='flex bg-[#00000010] p-2 md:p-4 rounded-lg'>
+      <Link href={projectUrl}>
+        <div className='rounded-lg p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
+          <Image src={backgroundImg} alt={title} />
+        </div>
+      </Link>
+
+      <div className='px-4 md:px-8 py-2 flex flex-col justify-between'>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+          hic, incidunt esse iste dolorem officiis tenetur maxime ducimus odio
+          voluptatem provident id ad facilis fuga error quod deserunt, eum
+          voluptatum. Ipsum, consequuntur. Iure aliquid iusto aspernatur
+          temporibus eligendi, perspiciatis quisquam dolorum, animi ex, qui
+          saepe eveniet natus possimus aliquam delectus.
+        </p>
         <Link href={projectUrl}>
-          <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-            {t('project-item.more')}
-          </p>
+          <p className='text-end text-orange-900'>See more</p>
         </Link>
       </div>
     </div>
+
+    // <div className='relative flex items-center justify-center h-auto w-full shadow-md shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#2a2a2a] to-[#7d7d7d]'>
+    //   <Image
+    //     className='rounded-xl group-hover:opacity-10'
+    //     src={backgroundImg}
+    //     alt={title}
+    //   />
+    //   <div className='hidden group-hover:block'>
+    //     <h3 className='text-2xl text-white tracking-wider text-center'>
+    //       {title}
+    //     </h3>
+    //     {/* Can pass 'skills' prop and map through it! */}
+    //     <p className='pb-4 pt-2 text-white text-center'>React JS</p>
+    //     <Link href={projectUrl}>
+    //       <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+    //         {t('project-item.more')}
+    //       </p>
+    //     </Link>
+    //   </div>
+    // </div>
   );
 }

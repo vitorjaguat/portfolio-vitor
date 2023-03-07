@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'next-i18next';
 import { SiNextdotjs } from 'react-icons/si';
 import { FaMarkdown } from 'react-icons/fa';
+import { DiGit } from 'react-icons/di';
 
 export default function Skills() {
   const { ref: ref1, inView: inView1 } = useInView();
@@ -86,6 +87,24 @@ export default function Skills() {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>JavaScript</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={ref2}
+            style={{
+              transform: inView1 ? 'none' : 'translateX(20%)',
+              opacity: inView1 ? 1 : 0,
+            }}
+            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+          >
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <DiGit size={64} color='#f14e32' />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>Git</h3>
               </div>
             </div>
           </div>

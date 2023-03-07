@@ -15,7 +15,7 @@ export default function Projects() {
           {t('projects.title')}
         </p>
         <h2 className='py-4'> {t('projects.subtitle')}</h2>
-        <div className='grid md:grid-cols-2 gap-8'>
+        <div className='pt-8 flex flex-col gap-8'>
           <ProjectItem
             title='Property Finder'
             backgroundImg={propertyImg}

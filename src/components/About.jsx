@@ -26,7 +26,7 @@ export default function About() {
   return (
     <div
       id='about'
-      className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent'
+      className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent overflow-hidden'
     >
       <div className='max-w-[1240px] m-auto md:grid grid-cols-5 gap-8'>
         <div className='col-span-3 lg:pr-20'>
