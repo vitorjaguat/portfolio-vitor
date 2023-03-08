@@ -10,7 +10,7 @@
     "title": "portfólio",
     "hi": "Vitor Butkus",
     "name": "Butkus",
-    "subtitle": "webdev front-end",
+    "subtitle": "desenvolvedor front-end",
     "text": "Posso transformar suas ideias em realidade usando as habilidades de programação mais modernas e atualizadas"
   },
   "about": {
@@ -19,7 +19,7 @@
     "small": "Começar a auto-apresentação é a parte mais difícil...",
     "p1": "Minha formação de base são as Artes Visuais. Tenho graduação e mestrado em Artes Visuais (habilitação em História da Arte) pela Universidade Federal do Rio Grande do Sul. Já atuei como artista, curador e pesquisador em museus, galerias e outras instituições.",
     "p2": "De uns anos pra cá, minha vontade insaciável de aprender novas habilidades e técnicas de expressão visual tem me levado para a área do desenvolvimento web. Já realizei vários cursos, e a cada um deles tenho buscado elaborar projetos pessoais para aplicar as habilidades dominadas.",
-    "p3": "Gosto de aprender novas línguas, e muito recentemente aprendi a me comunicar e compreender o chinês mandarim. Também tenho formação em Medicina Tradicional Chinesa, e ainda hoje gosto de compartilhar os ensinamentos da filosofia chinesa.",
+    "p3": "Gosto de aprender novas línguas, e muito recentemente aprendi a me comunicar em chinês mandarim. Atualmente, continuo desenvolvendo novas habilidades em front-end, ao mesmo tempo em que pouco a pouco busco ampliar meus conhecimentos em back-end.",
     "link": "Dê uma olhada nos meus projetos mais recentes"
   },
   "skills": {
@@ -28,10 +28,12 @@
   },
   "projects": {
     "title": "projetos",
-    "subtitle": "o que tenho feito"
-  },
-  "project-item": {
-    "more": "ver mais"
+    "subtitle": "o que tenho feito",
+    "more": "Ver mais",
+    "blog": {
+      "title": "Blog Coletivo / Revista Digital",
+      "text": "Este projeto consiste na estrutura de um blog ou revista digital. Hoje em dia, muitos clientes desejam eles mesmos editar os conteúdos de seus sites. Por isso, construí essa estrutura onde a pessoa logada pode adicionar, editar e remover postagens. Esse recurso pode facilitar a vida de clientes que não querem depender do desenvolvedor para gerenciar o conteúdo dos seus websites."
+    }
   },
   "contact": {
     "title": "contato",

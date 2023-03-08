@@ -9,12 +9,17 @@ import {
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
+import contactImg from '../../public/assets/contact.avif';
 
 export default function Contact() {
   const { t } = useTranslation('common');
 
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div
+      id='contact'
+      className='w-full h-full  bg-gradient-to-b from-transparent to-orange-200'
+    >
       <div className='max-w-[1240px] m-auto px-2 py-20 w-full'>
         <p className='text-xl tracking-widest uppercase text-primary'>
           {t('contact.title')}
@@ -23,15 +28,11 @@ export default function Contact() {
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-xl p-4'>
-            <div className='lg:p-4 h-full'>
+            <div className='lg:p-4 h-full flex flex-col justify-between'>
               <div>
-                <img
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src='https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
-                  alt='contact'
-                />
+                <Image className='rounded-xl' src={contactImg} alt='contact' />
               </div>
-              <div>
+              <div className='pt-6 text-center'>
                 <h2 className='py-2'>{t('contact.name')}</h2>
                 <p>{t('contact.position')}</p>
                 <p className='py-4'>{t('contact.text')}</p>

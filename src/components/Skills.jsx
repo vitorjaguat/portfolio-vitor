@@ -6,21 +6,26 @@ import { FaMarkdown } from 'react-icons/fa';
 import { DiGit } from 'react-icons/di';
 
 export default function Skills() {
-  const { ref: ref1, inView: inView1 } = useInView();
-  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref1, inView: inView1 } = useInView({
+    // triggerOnce: true,
+    // rootMargin: '700px',
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: true,
+  });
   const { t } = useTranslation('common');
 
   return (
     <div
       id='skills'
-      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-200'
+      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100'
     >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-primary'>
           {t('skills.title')}
         </p>
         <h2 className='py-4'>{t('skills.subtitle')}</h2>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <div className='grid pt-6 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Can be refactored into a new component: */}
           <div
             ref={ref1}
@@ -46,7 +51,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref1}
+            // ref={ref1}
             style={{
               transform: inView1 ? 'none' : 'translateX(-20%)',
               opacity: inView1 ? 1 : 0,
@@ -69,7 +74,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -92,7 +97,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -110,7 +115,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -133,7 +138,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -156,7 +161,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -174,7 +179,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref1}
+            // ref={ref1}
             style={{
               transform: inView1 ? 'none' : 'translateX(-20%)',
               opacity: inView1 ? 1 : 0,
@@ -197,7 +202,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -220,7 +225,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref1}
+            // ref={ref1}
             style={{
               transform: inView1 ? 'none' : 'translateX(-20%)',
               opacity: inView1 ? 1 : 0,
@@ -243,7 +248,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,
@@ -266,7 +271,7 @@ export default function Skills() {
           </div>
 
           <div
-            ref={ref2}
+            // ref={ref2}
             style={{
               transform: inView1 ? 'none' : 'translateX(20%)',
               opacity: inView1 ? 1 : 0,

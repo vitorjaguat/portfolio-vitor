@@ -2,26 +2,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
-export default function ProjectItem({ title, backgroundImg, projectUrl }) {
+export default function ProjectItem({
+  title,
+  backgroundImg,
+  projectUrl,
+  text,
+}) {
   const { t } = useTranslation('common');
 
   return (
-    <div className='flex bg-[#00000010] p-2 md:p-4 rounded-lg'>
+    <div className='md:flex bg-[#00000010] p-2 md:p-4 rounded-lg'>
       <Link href={projectUrl}>
-        <div className='rounded-lg p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
+        <div className='rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
           <Image src={backgroundImg} alt={title} />
         </div>
       </Link>
 
-      <div className='px-4 md:px-8 py-2 flex flex-col justify-between'>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-          hic, incidunt esse iste dolorem officiis tenetur maxime ducimus odio
-          voluptatem provident id ad facilis fuga error quod deserunt, eum
-          voluptatum. Ipsum, consequuntur. Iure aliquid iusto aspernatur
-          temporibus eligendi, perspiciatis quisquam dolorum, animi ex, qui
-          saepe eveniet natus possimus aliquam delectus.
-        </p>
+      <div className='px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between'>
+        <p>{text}</p>
         <Link href={projectUrl}>
           <p className='text-end text-orange-900'>See more</p>
         </Link>

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { useParallax } from 'react-scroll-parallax';
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
+import vitorImg from '../../public/assets/vitor.jpeg';
 
 export default function About() {
   // const imgParallax = useParallax({
@@ -28,8 +30,8 @@ export default function About() {
       id='about'
       className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent overflow-hidden'
     >
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-5 gap-8'>
-        <div className='col-span-3 lg:pr-20'>
+      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+        <div className='col-span-2 lg:pr-20'>
           <p className='uppercase text-xl tracking-widest text-primary'>
             {t('about.title')}
           </p>
@@ -44,20 +46,22 @@ export default function About() {
             </p>
           </Link>
         </div>
-        <div
-          ref={ref}
-          style={{
-            transform: inView ? 'none' : 'translateX(100%)',
-            backgroundColor: inView ? 'red' : 'blue',
-            transition: 'all 1s',
-          }}
-          className='col-span-2 w-full h-auto m-auto shadow-md shadow-gray-400 rounded-xl flex items-center justify-center p-1 hover:scale-105 ease-in duration-100'
-        >
-          <img
-            className='rounded-xl'
-            src='https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
-            alt='studio'
-          />
+        <div className='col-span-1 flex justify-center mt-8'>
+          <div
+            ref={ref}
+            style={{
+              transform: inView ? 'none' : 'translateX(100%)',
+              transition: 'all 1s',
+            }}
+            className='w-fit h-fit shadow-md p-2 bg-white shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-100'
+          >
+            <Image
+              width={250}
+              className='rounded-xl'
+              src={vitorImg}
+              alt='Vitor'
+            />
+          </div>
         </div>
       </div>
     </div>
