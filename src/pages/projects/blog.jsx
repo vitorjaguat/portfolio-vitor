@@ -4,8 +4,11 @@ import propertyImg from '../../../public/assets/projects/property.jpeg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Blog({}) {
+  const { t } = useTranslation('projects');
+
   useEffect(() => {}, []);
 
   return (
@@ -18,38 +21,39 @@ export default function Blog({}) {
           alt='screenshots'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Blog Coletivo / Revista Digital</h2>
+          <h2 className='py-2'>{t('blog.title')}</h2>
           <h3>React / Next.js / Tailwind / Firebase</h3>
         </div>
       </div>
 
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
-          <p>Project</p>
-          <h2>Overview</h2>
-          <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
-          </p>
+          <p>{t('blog.small')}</p>
+          <h2>{t('blog.summary')} </h2>
+          <div>{t('blog.summary-content')}</div>
+          <h2>{t('blog.description')}</h2>
+          <div>{t('blog.description-p1')}</div>
+          <div>{t('blog.description-p2')}</div>
+          <h2>{t('blog.technical')}</h2>
+          <div>{t('blog.technical-p1')}</div>
+          <div>{t('blog.technical-p2')}</div>
+          <div>{t('blog.technical-p3')}</div>
+          <div>{t('blog.technical-p4')}</div>
+          <div>{t('blog.technical-p5')}</div>
+
           <a
             href='https://github.com/fireclint/property-finder'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+            <button className='px-8 py-2 mt-4 mr-8'>{t('blog.code')}</button>
           </a>
           <a
             href='https://property-finder-development.web.app/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4'>Demo</button>
+            <button className='px-8 py-2 mt-4'>{t('blog.demo')}</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl p-4'>
