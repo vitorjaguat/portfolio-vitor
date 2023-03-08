@@ -22,7 +22,7 @@ export default function Projects() {
           <ProjectItem
             title={t('projects.blog.text')}
             backgroundImg={blogImg}
-            projectUrl='/blog'
+            projectUrl='/projects/blog'
             text={t('projects.blog.text')}
           />
           {/* <ProjectItem

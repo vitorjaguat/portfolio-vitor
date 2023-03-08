@@ -49,17 +49,17 @@ export default function Main(props) {
               {t('home.text')}
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-              <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                <FaGithub />
+              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <FaGithub size={18} />
               </div>
-              <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                <FaInstagram />
+              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <FaInstagram size={18} />
               </div>
-              <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                <FaTelegramPlane />
+              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <FaTelegramPlane size={18} />
               </div>
-              <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                <AiOutlineMail />
+              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <AiOutlineMail size={18} />
               </div>
             </div>
           </div>
