@@ -14,6 +14,10 @@ html {
     font-family: ;
   }
 
+  small {
+    @apply text-[0.95rem];
+  }
+
   h1,
   h2,
   h3,

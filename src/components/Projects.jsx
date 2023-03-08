@@ -6,6 +6,8 @@ import ProjectItem from './ProjectItem';
 import { useTranslation } from 'next-i18next';
 
 export default function Projects() {
+  const { t } = useTranslation('common');
+
   return (
     <div
       id='projects'

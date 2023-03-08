@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Signika_Negative } from '@next/font/google';
 import { useRouter } from 'next/router';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Navbar from '@/components/Navbar';
 
 const signika = Signika_Negative({
   subsets: ['latin'],
@@ -50,6 +51,7 @@ const App = ({ Component, pageProps }) => {
       </Head>
       <ParallaxProvider>
         <main className={`${signika.variable} font-signika`}>
+          <Navbar />
           <Component {...pageProps} />
         </main>
       </ParallaxProvider>
