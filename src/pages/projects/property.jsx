@@ -5,7 +5,7 @@ import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export default function property({ setNavColor }) {
+export default function Property({ setNavColor }) {
   useEffect(() => {
     setNavColor('bg-transparent');
   }, []);
