@@ -8,17 +8,26 @@ import { DiGit } from 'react-icons/di';
 export default function Skills() {
   const { ref: ref1, inView: inView1 } = useInView({
     // triggerOnce: true,
-    // rootMargin: '700px',
+    // rootMargin: '10%',
+    // threshold: 1,
   });
-  // const { ref: ref2, inView: inView2 } = useInView({
-  //   triggerOnce: true,
-  // });
+  const { ref: ref2, inView: inView2 } = useInView({});
+  const { ref: ref3, inView: inView3 } = useInView({});
+  const { ref: ref4, inView: inView4 } = useInView({});
+  const { ref: ref5, inView: inView5 } = useInView({});
+  const { ref: ref6, inView: inView6 } = useInView({});
+  const { ref: ref7, inView: inView7 } = useInView({});
+  const { ref: ref8, inView: inView8 } = useInView({});
+  const { ref: ref9, inView: inView9 } = useInView({});
+  const { ref: ref10, inView: inView10 } = useInView({});
+  const { ref: ref11, inView: inView11 } = useInView({});
+  const { ref: ref12, inView: inView12 } = useInView({});
   const { t } = useTranslation('common');
 
   return (
     <div
       id='skills'
-      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100'
+      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100 overflow-hidden'
     >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-primary'>
@@ -27,13 +36,14 @@ export default function Skills() {
         <h2 className='py-4'>{t('skills.subtitle')}</h2>
         <div className='grid pt-6 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Can be refactored into a new component: */}
+
           <div
             ref={ref1}
             style={{
-              transform: inView1 ? 'none' : 'translateX(-20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView1 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -51,12 +61,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref1}
+            ref={ref2}
             style={{
-              transform: inView1 ? 'none' : 'translateX(-20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView2 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -74,12 +84,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref3}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView3 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -97,12 +107,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref4}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView4 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -115,12 +125,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref5}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView5 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -138,12 +148,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref6}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView6 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -161,12 +171,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref7}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView7 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -179,11 +189,12 @@ export default function Skills() {
           </div>
 
           <div
+            ref={ref8}
             style={{
-              transform: inView1 ? 'none' : 'translateX(-20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView8 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -201,12 +212,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref9}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView9 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -224,12 +235,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref1}
+            ref={ref10}
             style={{
-              transform: inView1 ? 'none' : 'translateX(-20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView10 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -247,12 +258,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref11}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView11 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -270,12 +281,12 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref2}
+            ref={ref12}
             style={{
-              transform: inView1 ? 'none' : 'translateX(20%)',
-              opacity: inView1 ? 1 : 0,
+              transform: inView12 ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'
+            className='p-6 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>

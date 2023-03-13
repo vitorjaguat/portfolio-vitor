@@ -10,7 +10,7 @@
     "title": "portfolio",
     "hi": "Vitor Butkus",
     "name": "Butkus",
-    "subtitle": "front-end webdev",
+    "subtitle": "front-end webdeveloper",
     "text": "I can turn your ideas into reality by using the most modern and uptodate programming skills"
   },
   "about": {
@@ -32,14 +32,14 @@
     "more": "See more",
     "blog": {
       "title": "Collective Blog",
-      "text": "This project consists of the structure of a blog or digital magazine. Nowadays, many clients want to edit the contents of their websites themselves. Therefore, I built this structure where the logged in person can add, edit and remove posts. This feature can make life easier for customers who don't want to depend on the developer to manage the content of their websites."
+      "text": "This project is the structure of a blog or digital magazine. Nowadays, many clients want to edit the contents of their websites themselves. Therefore, I've built this structure where the logged in person can add, edit and remove posts. This feature can make life easier for customers who don't want to depend on the developer to manage the content of their websites."
     }
   },
   "contact": {
     "title": "contact",
     "subtitle": "how to find me",
     "name": "Vitor Butkus",
-    "position": "front-end webdev",
+    "position": "front-end webdeveloper",
     "text": "I don't usually show my personal life on social networks, but I believe that they are a very important means of socializing through the exchange of knowledge.",
     "connect": "connect with me"
   }
