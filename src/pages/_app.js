@@ -14,7 +14,7 @@ const signika = Signika_Negative({
 });
 
 const App = ({ Component, pageProps }) => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <>
       <Head>

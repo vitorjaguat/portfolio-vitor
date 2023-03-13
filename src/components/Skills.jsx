@@ -10,9 +10,9 @@ export default function Skills() {
     // triggerOnce: true,
     // rootMargin: '700px',
   });
-  const { ref: ref2, inView: inView2 } = useInView({
-    triggerOnce: true,
-  });
+  // const { ref: ref2, inView: inView2 } = useInView({
+  //   triggerOnce: true,
+  // });
   const { t } = useTranslation('common');
 
   return (
@@ -39,7 +39,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/html.png'
+                  src='/assets/skills/html.png'
                   width={64}
                   height={64}
                 />
@@ -179,7 +179,6 @@ export default function Skills() {
           </div>
 
           <div
-            // ref={ref1}
             style={{
               transform: inView1 ? 'none' : 'translateX(-20%)',
               opacity: inView1 ? 1 : 0,
