@@ -62,7 +62,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/css.png'
+                  src='/assets/skills/css.png'
                   width={64}
                   height={64}
                 />
@@ -85,7 +85,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/javascript.png'
+                  src='/assets/skills/javascript.png'
                   width={64}
                   height={64}
                 />
@@ -126,7 +126,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/github1.png'
+                  src='/assets/skills/github1.png'
                   width={64}
                   height={64}
                 />
@@ -149,7 +149,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/react.png'
+                  src='/assets/skills/react.png'
                   width={64}
                   height={64}
                 />
@@ -189,7 +189,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/firebase.png'
+                  src='/assets/skills/firebase.png'
                   width={64}
                   height={64}
                 />
@@ -212,7 +212,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/mongo.png'
+                  src='/assets/skills/mongo.png'
                   width={64}
                   height={64}
                 />
@@ -235,7 +235,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/tailwind.png'
+                  src='/assets/skills/tailwind.png'
                   width={64}
                   height={64}
                 />
@@ -258,7 +258,7 @@ export default function Skills() {
               <div className='m-auto'>
                 <Image
                   alt='my skills'
-                  src='/../public/assets/skills/node.png'
+                  src='/assets/skills/node.png'
                   width={64}
                   height={64}
                 />
