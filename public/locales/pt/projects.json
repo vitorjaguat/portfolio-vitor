@@ -53,5 +53,25 @@
     "technical-p5": " ",
     "demo": "demo",
     "code": "código"
+  },
+  "moreabstract": {
+    "title": "More Abstract",
+    "small": "Projeto",
+    "summary": "Resumo",
+    "summary-content": "Website da exposição 'More Abstract / Mais abstratas', do artista Pedro Victor Brandão (Galeria Portas Vilaseca), contendo as versões digitais das obras.",
+    "description": "Descrição",
+    "description-p1": "O site www.moreabstract.xyz apresenta a exposição More Abstract / Mais abstratas, de Pedro Victor Brandão. A exposição foi realizada na galeria de arte Portas Vilaseca, no Rio de Janeiro, em 2023. O desenvolvimento do site foi feito por mim e comissionado pela galeria.",
+    "description-p2": "A ideia do site não é substituir uma visita à galeria, mas sim adicionar à visita uma camada a mais. No site, o visitante pode conhecer as versões digitais das obras apresentadas na galeria. Essas obras foram publicadas como tokens não-fungíveis (NFT), e o site garante o acesso permanente dos visitantes às mesmas.",
+    "description-p3": "Além de conhecer e desfritar dos trabalhos abstratos e conceituais do artista, o visitante pode também adquirir os trabalhos através do próprio site. Basta que o visitante conecte a sua carteira digital de criptomoedas e faça a transação. No caso de uma das séries de obras ('View to nothingness'), ao adquirir a cópia digital, o visitante tem direito a uma cópia física da obra.",
+    "description-p4": "As transações em criptomoedas ainda não são muito conhecidas pelo grande público. Por isso, o site também contém uma seção de FAQ (Perguntas Frequentes), contendo uma série de explicações sobre os conceitos que regem a chamada Web3, os tokens não-fungíveis e as criptomoedas. Essa seção também aponta a questão da autenticidade das obras digitais, para melhor orientar os potenciais compradores.",
+    "description-p5": "O design do website é minimalista e intuitivo, com uma interface de usuário limpa e fácil de usar. Foi pensado para agradar tanto aos visitantes interessados na obra do artista, quanto aos colecionadores, investidores e outros possíveis compradores e clientes da galeria.",
+    "technical": "Especificações Técnicas",
+    "technical-p1": "O projeto foi escrito na sintaxe do React 18, usando a estrutura de rotas do Next.js 13.",
+    "technical-p2": "Para as interfaces de interação com os tokens não-fungíveis, foram usadas as widgets fornecidas pela plataforma Manifold. Essas widgets, ao serem importadas em um website React, fazem requisições ao API da Manifold para alimentar as fichas técnicas e imagens das obras com os dados de cada item. Na época do desenvolvimento deste site, esse recurso havia sido recém disponibilizado pela Manifold - o que me fez ter de entrar em contato com os desenvolvedores da equipe para solucionar alguns erros que ainda existiam na implementação deles. Foi um ótimo aprendizado para mim, e fico satisfeito de, dessa forma, ter contribuído também com o ecossistema daquela plataforma.",
+    "technical-p3": "O site é totalmente responsivo, podendo fornecer uma ótima experiência para usuários em desktop, mobile ou tablet.",
+    "technical-p4": "O texto introdutório e a seção FAQ estão em versão bilíngue português-inglês, fornecida através da dependência 'next-i18next'. O domínio moreabstract.xyz foi comprado e configurado via Google Domains e Vercel.",
+    "technical-p5": " ",
+    "demo": "site",
+    "code": "código"
   }
 }

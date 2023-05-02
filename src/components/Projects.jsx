@@ -1,6 +1,7 @@
 import blogImg from '../../public/assets/projects/blog.png';
 import donadaImg from '../../public/assets/projects/donada.jpg';
 import hanziImg from '../../public/assets/projects/hanzi.png';
+import moreabstractImg from '../../public/assets/projects/moreabstract.png';
 import cryptoImg from '../../public/assets/projects/crypto.jpeg';
 import twitchImg from '../../public/assets/projects/twitch.jpeg';
 import netflixImg from '../../public/assets/projects/netflix.jpeg';
@@ -38,6 +39,12 @@ export default function Projects() {
             backgroundImg={hanziImg}
             projectUrl='/projects/hanzi'
             text={t('projects.hanzi.text')}
+          />
+          <ProjectItem
+            title={t('projects.moreabstract.title')}
+            backgroundImg={moreabstractImg}
+            projectUrl='/projects/moreabstract'
+            text={t('projects.moreabstract.text')}
           />
 
           {/* <ProjectItem

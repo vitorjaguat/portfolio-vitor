@@ -41,6 +41,10 @@
     "hanzi": {
       "title": "Hanzi Draw",
       "text": "Uma aplicação web para treinar a escrita manual de hanzi (caracteres chineses). A pessoa usuária pode inserir qualquer caractere chinês e praticar a escrita usando o ponteiro do mouse, o toque ou o trackpad. Há ainda a opção de escolher listas de caracteres conforme o nível de proficiência do estudante de línguas. O desenho acontece de forma fluida e com sensibilidade à pressão, favorecendo o prazer e a criatividade durante o aprendizado."
+    },
+    "moreabstract": {
+      "title": "More Abstract",
+      "text": "Website da exposição 'More abstract / Mais abstratas', do artista Pedro Victor Brandão, realizada na galeria Portas Vilaseca, no Rio de Janeiro, em 2023. Além de trazer imagens da galeria física, o website contém a versão digital das obras apresentadas lá. Essas obras também foram publicadas em versão digital como tokens não-fungíveis, e podem ser compradas diretamente através desse website."
     }
   },
   "contact": {
