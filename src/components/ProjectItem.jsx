@@ -13,7 +13,7 @@ export default function ProjectItem({
   return (
     <div className='grid md:grid-cols-2 bg-[#00000010] p-2 md:p-4 rounded-lg'>
       <Link href={projectUrl}>
-        <div className=' max-h-[400px] md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
+        <div className=' md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
           <Image
             src={backgroundImg}
             alt={title}
@@ -23,7 +23,10 @@ export default function ProjectItem({
       </Link>
 
       <div className='md:col-span-1 px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between'>
-        <p>{text}</p>
+        <div className=''>
+          <p className='font-bold text-lg pb-6'>{title}</p>
+          <p>{text}</p>
+        </div>
         <Link href={projectUrl}>
           <p className='text-end text-orange-900'>See more</p>
         </Link>

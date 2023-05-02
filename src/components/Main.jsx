@@ -90,10 +90,10 @@ export default function Main(props) {
                 fill='none'
                 opacity='1'
                 stroke='#242424'
-                stroke-dasharray='12.0,0.0,22.0,30.0'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='6'
+                strokeDasharray='12.0,0.0,22.0,30.0'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='6'
               />
             </g>
           </svg>

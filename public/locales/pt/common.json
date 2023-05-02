@@ -37,6 +37,10 @@
     "donada": {
       "title": "Do nada ao pré-existente",
       "text": "'Do nada ao pré-existente' é uma obra de arte multimídia do artista Pedro Victor Brandão. Fui responsável por agregar interatividade a seis séries de imagens, transformando-as em seis animações que respondem ao toque ou ponteiro do mouse."
+    },
+    "hanzi": {
+      "title": "Hanzi Draw",
+      "text": "Uma aplicação web para treinar a escrita manual de hanzi (caracteres chineses). A pessoa usuária pode inserir qualquer caractere chinês e praticar a escrita usando o ponteiro do mouse, o toque ou o trackpad. Há ainda a opção de escolher listas de caracteres conforme o nível de proficiência do estudante de línguas. O desenho acontece de forma fluida e com sensibilidade à pressão, favorecendo o prazer e a criatividade durante o aprendizado."
     }
   },
   "contact": {

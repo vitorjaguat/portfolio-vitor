@@ -33,5 +33,25 @@
     "technical-p5": " ",
     "demo": "demo",
     "code": "código"
+  },
+  "hanzi": {
+    "title": "Hanzi Draw",
+    "small": "Projeto",
+    "summary": "Resumo",
+    "summary-content": "Aplicação web para a prática da escrita manual de caracteres chineses (hanzi).",
+    "description": "Descrição",
+    "description-p1": "Esta é uma ferramenta online criada por mim para desenhar caracteres chineses (hanzi). Ele permite aos usuários praticar e melhorar suas habilidades de escrita chinesa, traçando os caracteres com o mouse ou com o dedo (em dispositivos móveis).",
+    "description-p2": "Ao abrir o site, os usuários são apresentados a um campo de entrada de texto, onde eles podem digitar o caractere que desejam praticar. Uma vez digitado o caractere, o usuário pode clicar em 'Desenhar' e começar a praticar a escrita do caractere. O usuário pode ver a ordem dos traços do caractere e seguir o caminho com o mouse ou dedo, traçando o caractere na tela.",
+    "description-p3": "O site também permite aos usuários personalizar a aparência do caractere, escolhendo a cor e o tamanho do pincel, assim como o estilo de traçado.",
+    "description-p4": "Para ajudar ainda mais no aprendizado de novo vocabulário, os usuários também podem ser guiados no seu estudo por listas de vocabulários. Há listas, por exemplo, de animais, números, atividades de lazer, negócios, e também listas de vocabulários classificadas por nível de proficiência (HSK) do estudante.",
+    "description-p5": "O website é simples e intuitivo, com uma interface de usuário limpa e fácil de usar. Ele é uma ótima ferramenta para aqueles que estão aprendendo chinês ou para aqueles que desejam praticar a escrita de caracteres chineses de uma maneira divertida e interativa.",
+    "technical": "Especificações Técnicas",
+    "technical-p1": "O projeto foi escrito na sintaxe do React 18, usando a estrutura de rotas do Next.js 13.",
+    "technical-p2": "Além disso, foram usadas dependências carregadas do repositório NPM, tais como hanzi-write, perfect-freehand e react-icons.",
+    "technical-p3": "O site é totalmente responsivo, podendo fornecer uma ótima experiência para usuários em desktop, mobile ou tablet.",
+    "technical-p4": "Em breve, pretendo adicionar o recurso de login, dessa forma os usuários poderão criar uma conta pessoal, favoritar suas listas de caracteres preferidos, salvar desenhos, etc.",
+    "technical-p5": " ",
+    "demo": "demo",
+    "code": "código"
   }
 }
