@@ -1,4 +1,5 @@
 import blogImg from '../../public/assets/projects/blog.png';
+import donadaImg from '../../public/assets/projects/donada.jpg';
 import cryptoImg from '../../public/assets/projects/crypto.jpeg';
 import twitchImg from '../../public/assets/projects/twitch.jpeg';
 import netflixImg from '../../public/assets/projects/netflix.jpeg';
@@ -25,6 +26,13 @@ export default function Projects() {
             projectUrl='/projects/blog'
             text={t('projects.blog.text')}
           />
+          <ProjectItem
+            title={t('projects.donada.text')}
+            backgroundImg={donadaImg}
+            projectUrl='/projects/donada'
+            text={t('projects.donada.text')}
+          />
+
           {/* <ProjectItem
             title='Crypto App'
             backgroundImg={cryptoImg}

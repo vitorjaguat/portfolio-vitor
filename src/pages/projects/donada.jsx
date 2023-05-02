@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { useEffect } from 'react';
-import blogImg from '../../../public/assets/projects/blog.png';
+import donadaImg from '../../../public/assets/projects/donadaImg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import { FiCheck } from 'react-icons/fi';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
-export default function Blog({}) {
+export default function Donada({}) {
   const { t } = useTranslation('projects');
 
   // useEffect(() => {}, []);
@@ -18,12 +18,12 @@ export default function Blog({}) {
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-white/40 z-[3]' />
         <Image
           className='absolute z-1 translate-y-[-190px]'
-          src={blogImg}
+          src={donadaImg}
           alt='screenshots'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-orange-900 z-10 p-2'>
-          <h2 className='py-2'>{t('blog.title')}</h2>
-          <h3>React / Next.js / Tailwind / Firebase</h3>
+          <h2 className='py-2'>{t('donada.title')}</h2>
+          <h3>JavaScript / CSS / HTML</h3>
         </div>
       </div>
 
@@ -31,31 +31,31 @@ export default function Blog({}) {
         <div className='col-span-4'>
           {/* <small>{t('blog.title')}</small> */}
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.summary')} </h2>
-            <div className='py-3'>{t('blog.summary-content')}</div>
+            <h2 className='text-xl'>{t('donada.summary')} </h2>
+            <div className='py-3'>{t('donada.summary-content')}</div>
           </div>
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.description')}</h2>
-            <div className='py-3'>{t('blog.description-p1')}</div>
-            <div>{t('blog.description-p2')}</div>
+            <h2 className='text-xl'>{t('donada.description')}</h2>
+            <div className='py-3'>{t('donada.description-p1')}</div>
+            <div>{t('donada.description-p2')}</div>
           </div>
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.technical')}</h2>
-            <div className='py-3'>{t('blog.technical-p1')}</div>
-            <div className='py-3'>{t('blog.technical-p2')}</div>
-            <div className='py-3'>{t('blog.technical-p3')}</div>
-            <div className='py-3'>{t('blog.technical-p4')}</div>
-            <div className='py-3'>{t('blog.technical-p5')}</div>
+            <h2 className='text-xl'>{t('donada.technical')}</h2>
+            <div className='py-3'>{t('donada.technical-p1')}</div>
+            <div className='py-3'>{t('donada.technical-p2')}</div>
+            <div className='py-3'>{t('donada.technical-p3')}</div>
+            <div className='py-3'>{t('donada.technical-p4')}</div>
+            <div className='py-3'>{t('donada.technical-p5')}</div>
           </div>
           <a
-            href='https://github.com/vitorjaguat/blog-nextjs'
+            href='https://github.com/vitorjaguat/donada-v2'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>{t('blog.code')}</button>
           </a>
           <a
-            href='https://blog-nextjs-not.vercel.app/'
+            href='https://property-finder-development.web.app/'
             target='_blank'
             rel='noreferrer'
           >

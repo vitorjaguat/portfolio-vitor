@@ -22,6 +22,7 @@ export default function Skills() {
   const { ref: ref10, inView: inView10 } = useInView({});
   const { ref: ref11, inView: inView11 } = useInView({});
   const { ref: ref12, inView: inView12 } = useInView({});
+  const { ref: ref13, inView: inView13 } = useInView({});
   const { t } = useTranslation('common');
 
   return (
@@ -300,6 +301,31 @@ export default function Skills() {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Markdown</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={ref13}
+            style={{
+              transform: inView13 ? 'translateX(0)' : 'translateX(100%)',
+              transition: 'all 1s',
+            }}
+            className='p-6 shadow-md rounded-xl'
+          >
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <img
+                  alt='my skills'
+                  src='/assets/skills/p5js.svg'
+                  // width={64}
+                  // height={64}
+                  className='w-[60px] h-[60px]'
+                />
+                {/* <FaMarkdown color='#8f8f8f' size={64} /> */}
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>p5.js</h3>
               </div>
             </div>
           </div>

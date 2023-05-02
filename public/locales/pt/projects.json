@@ -15,5 +15,23 @@
     "technical-p5": "Dessa forma, essa solução une o melhor de dois mundos: por um lado, há a rapidez de uma aplicação feita em React/Next.js; por outro lado, há a interatividade e facilidade de alimentação de conteúdo existente nos websites hospedados em plataformas como Wordpress, Wix, etc. - e sem a necessidade de pagamento por esses serviços.",
     "demo": "demo",
     "code": "código"
+  },
+  "donada": {
+    "title": "Do nada ao pré-existente",
+    "small": "Projeto",
+    "summary": "Resumo",
+    "summary-content": "Criação de script para interatividade de obra de arte.",
+    "description": "Descrição",
+    "description-p1": "A série 'Do nada ao pré-existente' do artista contemporâneo brasileiro Pedro Victor Brandão consiste em 6 sets de imagens que retratam processos fotoquímicos gerados pela interação de reagentes com papel fotográfico. As imagens registram gradualmente as reações químicas disparadas pelo artista em seu material de trabalho, gerando finalmente uma composição abstrata.",
+    "description-p2": "A minha tarefa aqui foi, partindo desses sets de imagens estáticas, gerar um script de programação JavaScript que os tornasse animados, reagindo ao toque (em dispositivos com tela touch) ou ao ponteiro do mouse (em dispositivos desktop). A pessoa usuária interage com a obra ao tocar/passar o mouse sobre a composição, revelando gradualmente os passos do processo de criação da imagem, até o resultado final.",
+    "description-p3": "Um dos itens da série 'Do nada ao pré-existente' esteve na exposição coletiva 'Emoção de lidar' (2023), na Quadra Galeria, em São Paulo. As seis obras também publicadas como tokens não-fungíveis (NFT) para fins de venda e documentação permanente.",
+    "technical": "Especificações Técnicas",
+    "technical-p1": "Para dar vida às imagens estáticas, gerei uma estrutura básica de HTML, CSS e JavaScript. O HTML serve para prover a estrutura semântica do markup. O CSS serve simplesmente para garantir a responsividade da animação em dispositivos com telas de diferentes formatos e tamanhos.",
+    "technical-p2": "O script em Vanilla JavaScript é o que, de fato, garante a interação da pessoa usuária com a obra. Seja através do toque ou do ponteiro do mouse, a pessoa usuária pode ativar a animação frame a frame das imagens, na velocidade estabelecida pela rapidez do movimento do dedo ou do mouse no eixo X (horizontal) da imagem. A animação pode ser avançada e retrocedida quantas vezes a pessoa usuária desejar.",
+    "technical-p3": "Ao entrar na página, uma barra de carregamento vai indicar o progresso de carregamento das imagens. Por escolha do artista que comissionou esse projeto, as imagens estão em resolução alta (cerca de 3000px de altura), e por isso o indicador de carregamento é necessário para experiência satisfatória do usuário. Ao tirar o dedo/ponteiro do mouse da área da imagem, é mostrado um ícone em svg onde aparece uma mão e a ação de rolagem lateral (swipe), indicando a forma de interação com a obra. Esse ícone também aparece logo que todas as imagens são carregadas, indicando que a aplicação está pronta para a interação.",
+    "technical-p4": "O código deveria ser o mais leve possível, já que o objetivo seria publicá-lo em um serviço de armazenamento e registro permanente na blockchain Ethereum.",
+    "technical-p5": " ",
+    "demo": "demo",
+    "code": "código"
   }
 }

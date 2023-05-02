@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 
 export default function ProjectItem({
   title,
@@ -8,17 +8,21 @@ export default function ProjectItem({
   projectUrl,
   text,
 }) {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
 
   return (
-    <div className='md:flex bg-[#00000010] p-2 md:p-4 rounded-lg'>
+    <div className='grid md:grid-cols-2 bg-[#00000010] p-2 md:p-4 rounded-lg'>
       <Link href={projectUrl}>
-        <div className='rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
-          <Image src={backgroundImg} alt={title} />
+        <div className=' max-h-[400px] md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
+          <Image
+            src={backgroundImg}
+            alt={title}
+            className='object-cover max-h-[380px]'
+          />
         </div>
       </Link>
 
-      <div className='px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between'>
+      <div className='md:col-span-1 px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between'>
         <p>{text}</p>
         <Link href={projectUrl}>
           <p className='text-end text-orange-900'>See more</p>
