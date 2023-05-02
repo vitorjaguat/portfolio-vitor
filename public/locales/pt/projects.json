@@ -31,7 +31,7 @@
     "technical-p3": "Ao entrar na página, uma barra de carregamento vai indicar o progresso de carregamento das imagens. Por escolha do artista que comissionou esse projeto, as imagens estão em resolução alta (cerca de 3000px de altura), e por isso o indicador de carregamento é necessário para experiência satisfatória do usuário. Ao tirar o dedo/ponteiro do mouse da área da imagem, é mostrado um ícone em svg onde aparece uma mão e a ação de rolagem lateral (swipe), indicando a forma de interação com a obra. Esse ícone também aparece logo que todas as imagens são carregadas, indicando que a aplicação está pronta para a interação.",
     "technical-p4": "O código deveria ser o mais leve possível, já que o objetivo seria publicá-lo em um serviço de armazenamento e registro permanente na blockchain Ethereum.",
     "technical-p5": " ",
-    "demo": "demo",
+    "demo": "obra",
     "code": "código"
   },
   "hanzi": {
