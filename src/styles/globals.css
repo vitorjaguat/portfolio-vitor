@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
 /* smooth-scroll: */
 html {
   scroll-behavior: smooth;
