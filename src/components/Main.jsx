@@ -1,6 +1,9 @@
-import { AiOutlineMail } from 'react-icons/ai';
-// import { BsFillPersonFill } from 'react-icons/bs';
-import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaInstagram,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import { useParallax } from 'react-scroll-parallax';
 import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
@@ -49,18 +52,42 @@ export default function Main(props) {
               {t('home.text')}
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
-                <FaGithub size={18} />
-              </div>
-              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
-                <FaInstagram size={18} />
-              </div>
-              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
-                <FaTelegramPlane size={18} />
-              </div>
-              <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
-                <AiOutlineMail size={18} />
-              </div>
+              <a
+                href='https://github.com/vitorjaguat'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                  <FaGithub size={18} />
+                </div>
+              </a>
+              <a
+                href='https://www.instagram.com/mtc.cultura/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                  <FaInstagram size={18} />
+                </div>
+              </a>
+              <a
+                href='https://t.me/jaguat'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                  <FaTelegramPlane size={18} />
+                </div>
+              </a>
+              <a
+                href='https://wa.me/5511989417369'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                  <FaWhatsapp size={18} />
+                </div>
+              </a>
             </div>
           </div>
         </div>
