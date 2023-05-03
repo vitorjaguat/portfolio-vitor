@@ -15,7 +15,7 @@ export default function Moreabstract({}) {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative overflow-hidden'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] z-[3] bg-[url("/assets/projects/moreabstract.png")] opacity-50 bg-cover bg-repeat bg-bottom' />
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] z-[3] bg-[url("/assets/projects/moreabstract.png")] opacity-60 bg-cover bg-repeat bg-bottom' />
         {/* <Image
           className='absolute z-1 translate-y-[-190px]'
           src={donadaImg}
@@ -37,7 +37,10 @@ export default function Moreabstract({}) {
           <div className='pb-8'>
             <h2 className='text-xl'>{t('moreabstract.description')}</h2>
             <div className='py-3'>{t('moreabstract.description-p1')}</div>
-            <div>{t('moreabstract.description-p2')}</div>
+            <div className='pb-3'>{t('moreabstract.description-p2')}</div>
+            <div className='pb-3'>{t('moreabstract.description-p3')}</div>
+            <div className='pb-3'>{t('moreabstract.description-p4')}</div>
+            <div className='pb-3'>{t('moreabstract.description-p5')}</div>
           </div>
           <div className='pb-8'>
             <h2 className='text-xl'>{t('moreabstract.technical')}</h2>

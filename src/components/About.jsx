@@ -36,7 +36,7 @@ export default function About() {
             {t('about.title')}
           </p>
           <h2 className='py-4'>{t('about.subtitle')}</h2>
-          <p className='py-2 text-gray-600'>{t('about.small')}</p>
+          {/* <p className='py-2 text-gray-600'>{t('about.small')}</p> */}
           <p className='py-2 text-gray-600'>{t('about.p1')}</p>
           <p className='py-2 text-gray-600'>{t('about.p2')}</p>
           <p className='py-2 text-gray-600'>{t('about.p3')}</p>
