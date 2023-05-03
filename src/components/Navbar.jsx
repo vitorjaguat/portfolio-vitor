@@ -3,7 +3,12 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { GrFormClose } from 'react-icons/gr';
-import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaInstagram,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from 'react-icons/fa';
 // import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
@@ -154,18 +159,42 @@ export default function Navbar() {
             JOIN ME AT
           </p>
           <div className='flex items-center justify-between my-4 w-full'>
-            <div className='rounded-full bg-orange-300 shadow-s p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-              <FaGithub />
-            </div>
-            <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-              <FaInstagram />
-            </div>
-            <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-              <FaTelegramPlane />
-            </div>
-            <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
-              <AiOutlineMail />
-            </div>
+            <a
+              href='https://github.com/vitorjaguat'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className='rounded-full bg-orange-300 shadow-s p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaGithub />
+              </div>
+            </a>
+            <a
+              href='https://www.instagram.com/mtc.cultura/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaInstagram />
+              </div>
+            </a>
+            <a
+              href='https://t.me/jaguat'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaTelegramPlane />
+              </div>
+            </a>
+            <a
+              href='https://wa.me/5511989417369'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className='rounded-full bg-orange-300 shadow-sm p-2 cursor-pointer hover:scale-105 ease-in duration-500'>
+                <FaWhatsapp />
+              </div>
+            </a>
           </div>
         </div>
       </div>
