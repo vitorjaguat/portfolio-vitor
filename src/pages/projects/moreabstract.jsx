@@ -15,7 +15,7 @@ export default function Moreabstract({}) {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative overflow-hidden'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] z-[3] bg-[url("/assets/projects/moreabstract.png")] opacity-60 bg-cover bg-repeat bg-bottom' />
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] z-[3] bg-[url("/assets/projects/moreabstract.png")] opacity-30 bg-cover bg-repeat bg-bottom' />
         {/* <Image
           className='absolute z-1 translate-y-[-190px]'
           src={donadaImg}

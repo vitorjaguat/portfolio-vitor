@@ -1,11 +1,11 @@
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonFill } from 'react-icons/bs';
 import {
   FaGithub,
   FaLinkedinIn,
   FaInstagram,
   FaTelegramPlane,
+  FaWhatsapp,
 } from 'react-icons/fa';
+
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -42,7 +42,11 @@ export default function Contact() {
                   {t('contact.connect')}
                 </p>
                 <div className='flex items-center justify-around py-4'>
-                  <a target='_blank' href='https://github.com/vitorjaguat'>
+                  <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://github.com/vitorjaguat'
+                  >
                     <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                       <FaGithub />
                     </div>
@@ -50,19 +54,28 @@ export default function Contact() {
                   <a
                     href='https://www.instagram.com/mtc.cultura'
                     target='_blank'
+                    rel='noopener noreferrer'
                   >
                     <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                       <FaInstagram />
                     </div>
                   </a>
-                  <a href='https://t.me/jaguat' target='_blank'>
+                  <a
+                    href='https://t.me/jaguat'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                       <FaTelegramPlane />
                     </div>
                   </a>
-                  <a href='mailto:vitorbutkus@gmail.com'>
+                  <a
+                    href='https://wa.me/5511989417369'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <div className='rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                      <AiOutlineMail />
+                      <FaWhatsapp />
                     </div>
                   </a>
                 </div>
