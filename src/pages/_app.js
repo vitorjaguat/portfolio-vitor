@@ -49,14 +49,14 @@ const App = ({ Component, pageProps }) => {
         <meta property='og:type' content='article' />
         <meta property='og:locale' content='en_US' />
       </Head>
-      <ParallaxProvider>
-        <main
-          className={`${signika.variable} font-signika w-screen overflow-x-hidden`}
-        >
+      <main
+        className={`${signika.variable} font-signika w-screen overflow-x-hidden`}
+      >
+        <ParallaxProvider>
           <Navbar />
           <Component {...pageProps} />
-        </main>
-      </ParallaxProvider>
+        </ParallaxProvider>
+      </main>
     </>
   );
 };
