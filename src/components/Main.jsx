@@ -34,7 +34,7 @@ export default function Main(props) {
   const { t } = useTranslation('common');
 
   return (
-    <div className=''>
+    <div className='w-screen overflow-x-hidden'>
       <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
