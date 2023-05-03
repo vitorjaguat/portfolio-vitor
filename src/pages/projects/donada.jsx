@@ -42,10 +42,10 @@ export default function Donada({}) {
           <div className='pb-8'>
             <h2 className='text-xl'>{t('donada.technical')}</h2>
             <div className='py-3'>{t('donada.technical-p1')}</div>
-            <div className='py-3'>{t('donada.technical-p2')}</div>
-            <div className='py-3'>{t('donada.technical-p3')}</div>
-            <div className='py-3'>{t('donada.technical-p4')}</div>
-            <div className='py-3'>{t('donada.technical-p5')}</div>
+            <div className='pb-3'>{t('donada.technical-p2')}</div>
+            <div className='pb-3'>{t('donada.technical-p3')}</div>
+            <div className='pb-3'>{t('donada.technical-p4')}</div>
+            <div className='pb-3'>{t('donada.technical-p5')}</div>
           </div>
           <a
             href='https://github.com/vitorjaguat/donada-v2'

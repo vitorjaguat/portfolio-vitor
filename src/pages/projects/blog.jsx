@@ -37,15 +37,15 @@ export default function Blog({}) {
           <div className='pb-8'>
             <h2 className='text-xl'>{t('blog.description')}</h2>
             <div className='py-3'>{t('blog.description-p1')}</div>
-            <div>{t('blog.description-p2')}</div>
+            <div className='pb-3'>{t('blog.description-p2')}</div>
           </div>
           <div className='pb-8'>
             <h2 className='text-xl'>{t('blog.technical')}</h2>
             <div className='py-3'>{t('blog.technical-p1')}</div>
-            <div className='py-3'>{t('blog.technical-p2')}</div>
-            <div className='py-3'>{t('blog.technical-p3')}</div>
-            <div className='py-3'>{t('blog.technical-p4')}</div>
-            <div className='py-3'>{t('blog.technical-p5')}</div>
+            <div className='pb-3'>{t('blog.technical-p2')}</div>
+            <div className='pb-3'>{t('blog.technical-p3')}</div>
+            <div className='pb-3'>{t('blog.technical-p4')}</div>
+            <div className='pb-3'>{t('blog.technical-p5')}</div>
           </div>
           <a
             href='https://github.com/vitorjaguat/blog-nextjs'

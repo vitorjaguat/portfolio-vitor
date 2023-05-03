@@ -53,6 +53,12 @@
     "name": "Vitor Butkus",
     "position": "desenvolvedor front-end",
     "text": "Eu não costumo mostrar minha vida pessoal nas redes sociais, mas acredito que elas são um meio muito importante de socializar através da troca de conhecimentos.",
-    "connect": "conecte-se comigo"
+    "connect": "conecte-se comigo",
+    "label-name": "nome",
+    "label-phone": "celular",
+    "label-email": "e-mail",
+    "label-subject": "assunto",
+    "label-message": "mensagem",
+    "button": "enviar"
   }
 }

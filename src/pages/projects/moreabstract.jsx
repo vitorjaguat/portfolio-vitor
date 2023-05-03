@@ -45,10 +45,10 @@ export default function Moreabstract({}) {
           <div className='pb-8'>
             <h2 className='text-xl'>{t('moreabstract.technical')}</h2>
             <div className='py-3'>{t('moreabstract.technical-p1')}</div>
-            <div className='py-3'>{t('moreabstract.technical-p2')}</div>
-            <div className='py-3'>{t('moreabstract.technical-p3')}</div>
-            <div className='py-3'>{t('moreabstract.technical-p4')}</div>
-            <div className='py-3'>{t('moreabstract.technical-p5')}</div>
+            <div className='pb-3'>{t('moreabstract.technical-p2')}</div>
+            <div className='pb-3'>{t('moreabstract.technical-p3')}</div>
+            <div className='pb-3'>{t('moreabstract.technical-p4')}</div>
+            <div className='pb-3'>{t('moreabstract.technical-p5')}</div>
           </div>
           <a
             href='https://github.com/vitorjaguat/auction-page2'
