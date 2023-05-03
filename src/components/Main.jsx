@@ -92,16 +92,18 @@ export default function Main(props) {
           </div>
         </div>
 
-        <div className='absolute bottom-[10%] w-screen overflow-hidden object-cover'>
+        <div className='absolute bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover'>
           <svg
             // height='100%'
-            className='w-[1000px] md:w-screen overflow-hidden '
+            className='w-[1000px] md:w-screen overflow-x-hidden '
             // className='w-screen mt-[100px]'
             stroke-miterlimit='10'
             style={{
               fillRule: 'nonzero',
               strokeLinecap: 'round',
               strokeLinejoin: 'round',
+              overflowX: 'hidden',
+              width: '100vw',
             }}
             viewBox='0 0 3000 200'
             width='100%'
