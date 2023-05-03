@@ -50,7 +50,7 @@ const App = ({ Component, pageProps }) => {
         <meta property='og:locale' content='en_US' />
       </Head>
       <main
-        className={`${signika.variable} font-signika w-screen overflow-x-hidden`}
+        className={`${signika.variable} font-signika w-full overflow-x-hidden`}
       >
         <ParallaxProvider>
           <Navbar />
