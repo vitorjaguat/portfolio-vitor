@@ -37,8 +37,8 @@ export default function Navbar() {
     <div
       className={
         shadow
-          ? 'fixed top-0 left-0 w-screen h-16 shadow-md ease-in z-10 duration-300 bg-[#FFF7ED99] overflow-x-hidden'
-          : 'fixed top-0 left-0 z-10 w-screen overflow-x-hidden h-16 ease-in duration-200'
+          ? 'fixed top-0 left-0 w-full h-16 shadow-md ease-in z-10 duration-300 bg-[#FFF7ED99] overflow-x-hidden'
+          : 'fixed top-0 left-0 z-10 w-full overflow-x-hidden h-16 ease-in duration-200'
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2'>
