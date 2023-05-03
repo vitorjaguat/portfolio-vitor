@@ -51,7 +51,7 @@ const App = ({ Component, pageProps }) => {
       </Head>
       <ParallaxProvider>
         <main
-          className={`${signika.variable} font-signika w-screen overflow-hidden`}
+          className={`${signika.variable} font-signika w-screen overflow-x-hidden`}
         >
           <Navbar />
           <Component {...pageProps} />
