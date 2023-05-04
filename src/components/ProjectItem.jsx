@@ -13,7 +13,7 @@ export default function ProjectItem({
   return (
     <div className='grid md:grid-cols-2 bg-[#00000010] p-2 md:p-4 rounded-lg'>
       <Link href={projectUrl}>
-        <div className=' md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-60 hover:scale-95 duration-300'>
+        <div className=' md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-80 hover:scale-95 duration-300'>
           <Image
             src={backgroundImg}
             alt={title}

@@ -5,7 +5,6 @@ import {
   FaTelegramPlane,
   FaWhatsapp,
 } from 'react-icons/fa';
-
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -14,6 +13,8 @@ import contactImg from '../../public/assets/contact.avif';
 
 export default function Contact() {
   const { t } = useTranslation('common');
+
+  //send e-mail:
 
   return (
     <div
@@ -83,7 +84,7 @@ export default function Contact() {
             </div>
           </div>
           {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+          <div className='col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>

@@ -51,13 +51,13 @@ export default function Main(props) {
             <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
               {t('home.text')}
             </p>
-            <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+            <div className='flex items-center justify-between max-w-[330px] m-auto py-4 box-border'>
               <a
                 href='https://github.com/vitorjaguat'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaGithub size={18} />
                 </div>
               </a>
@@ -66,7 +66,7 @@ export default function Main(props) {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaInstagram size={18} />
                 </div>
               </a>
@@ -75,7 +75,7 @@ export default function Main(props) {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaTelegramPlane size={18} />
                 </div>
               </a>
@@ -84,7 +84,7 @@ export default function Main(props) {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaWhatsapp size={18} />
                 </div>
               </a>
@@ -92,10 +92,10 @@ export default function Main(props) {
           </div>
         </div>
 
-        <div className='absolute bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover'>
+        <div className='absolute bottom-[2%] sm:bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover'>
           <svg
             // height='100%'
-            className='w-[1000px] md:w-screen overflow-x-hidden '
+            className='w-[1400px] translate-x-[-300px] md:w-screen overflow-x-hidden '
             // className='w-screen mt-[100px]'
             stroke-miterlimit='10'
             style={{
@@ -103,7 +103,7 @@ export default function Main(props) {
               strokeLinecap: 'round',
               strokeLinejoin: 'round',
               overflowX: 'hidden',
-              width: '100vw',
+              // width: '100vw',
             }}
             viewBox='0 0 3000 200'
             width='100%'
