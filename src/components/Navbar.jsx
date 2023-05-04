@@ -78,10 +78,14 @@ export default function Navbar() {
               </Link>
               <div className='absolute lowercase h-0 overflow-hidden group-hover:h-auto group-hover:transition-all duration-300'>
                 <Link href='/#authorial'>
-                  <div className='py-2 hover:text-orange-900'>autorais</div>
+                  <div className='py-2 hover:text-orange-900'>
+                    {t('navbar.authorial')}
+                  </div>
                 </Link>
                 <Link href='/#commissioned'>
-                  <div className=' hover:text-orange-900'>comissionados</div>
+                  <div className=' hover:text-orange-900'>
+                    {t('navbar.commissioned')}
+                  </div>
                 </Link>
               </div>
             </li>
