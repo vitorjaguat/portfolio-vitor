@@ -55,36 +55,38 @@ export default function Navbar() {
         <div className='hidden md:block'>
           <ul className='hidden md:flex'>
             <Link href='/#home' scroll={false}>
-              <li className='text-sm uppercase hover:border-b '>
+              <li className='text-sm uppercase hover:text-orange-900 '>
                 {t('navbar.home')}
               </li>
             </Link>
             <Link href='/#about' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
                 {t('navbar.about')}
               </li>
             </Link>
             <Link href='/#skills' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
                 {t('navbar.skills')}
               </li>
             </Link>
 
-            <li className='group ml-10 text-sm uppercase hover:border-b '>
+            <li className='group ml-10 text-sm uppercase '>
               <Link href='/#projects' scroll={false}>
-                <div className=''>{t('navbar.projects')}</div>
+                <div className='hover:text-orange-900'>
+                  {t('navbar.projects')}
+                </div>
               </Link>
-              <div className='absolute lowercase hidden group-hover:block'>
+              <div className='absolute lowercase h-0 overflow-hidden group-hover:h-auto group-hover:transition-all duration-300'>
                 <Link href='/#authorial'>
-                  <div className='py-2'>autorais</div>
+                  <div className='py-2 hover:text-orange-900'>autorais</div>
                 </Link>
                 <Link href='/#commissioned'>
-                  <div className=''>comissionados</div>
+                  <div className=' hover:text-orange-900'>comissionados</div>
                 </Link>
               </div>
             </li>
             <Link href='/#contact' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
                 {t('navbar.contact')}
               </li>
             </Link>
