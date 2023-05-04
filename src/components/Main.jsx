@@ -97,7 +97,7 @@ export default function Main(props) {
             // height='100%'
             className='w-[1400px] translate-x-[-300px] md:translate-x-0 md:w-screen overflow-x-hidden '
             // className='w-screen mt-[100px]'
-            stroke-miterlimit='10'
+            strokeMiterlimit='10'
             style={{
               fillRule: 'nonzero',
               strokeLinecap: 'round',

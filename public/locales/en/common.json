@@ -32,21 +32,29 @@
     "title": "projects",
     "subtitle": "what I've been doing",
     "more": "See more",
-    "blog": {
-      "title": "Collective Blog / Digital Magazine",
-      "text": "This project is the structure of a blog or digital magazine. Nowadays, many clients want to edit the contents of their websites themselves. Therefore, I've built this structure where the logged in person can add, edit and remove posts. This feature can make life easier for customers who don't want to depend on the developer to manage the content of their websites."
+    "authorial": {
+      "title": "authorial projects",
+      "subtitle": "what I've been doing",
+      "blog": {
+        "title": "Collective Blog / Digital Magazine",
+        "text": "This project is the structure of a blog or digital magazine. Nowadays, many clients want to edit the contents of their websites themselves. Therefore, I've built this structure where the logged in person can add, edit and remove posts. This feature can make life easier for customers who don't want to depend on the developer to manage the content of their websites."
+      },
+      "hanzi": {
+        "title": "Hanzi Draw",
+        "text": "This is a web application to practice manual writing of hanzi (Chinese characters). The user can input any Chinese character and practice writing it using a mouse pointer, touch, or trackpad. There is also an option to choose character lists according to the language learner's proficiency level. The drawing happens smoothly and with pressure sensitivity, promoting enjoyment and creativity during learning."
+      }
     },
-    "donada": {
-      "title": "From nothing to pre-existing",
-      "text": "'From nothing to pre-existing' is a multimedia artwork by artist Pedro Victor Brandão. I was responsible for adding interactivity to six series of images, turning them into six animations that respond to touch or mouse pointer."
-    },
-    "hanzi": {
-      "title": "Hanzi Draw",
-      "text": "This is a web application to practice manual writing of hanzi (Chinese characters). The user can input any Chinese character and practice writing it using a mouse pointer, touch, or trackpad. There is also an option to choose character lists according to the language learner's proficiency level. The drawing happens smoothly and with pressure sensitivity, promoting enjoyment and creativity during learning."
-    },
-    "moreabstract": {
-      "title": "More Abstract",
-      "text": "Website of the art exhibition 'More Abstract', by the artist Pedro Victor Brandão, held at the Portas Vilaseca gallery in Rio de Janeiro in 2023. In addition to featuring images of the physical gallery, the website includes the digital versions of the artworks presented there. These works have also been published as non-fungible tokens and can be purchased directly through this website."
+    "commissioned": {
+      "title": "commissioned projects",
+      "subtitle": "what I've been doing for other people",
+      "donada": {
+        "title": "From nothing to pre-existing",
+        "text": "'From nothing to pre-existing' is a multimedia artwork by artist Pedro Victor Brandão. I was responsible for adding interactivity to six series of images, turning them into six animations that respond to touch or mouse pointer."
+      },
+      "moreabstract": {
+        "title": "More Abstract",
+        "text": "Website of the art exhibition 'More Abstract', by the artist Pedro Victor Brandão, held at the Portas Vilaseca gallery in Rio de Janeiro in 2023. In addition to featuring images of the physical gallery, the website includes the digital versions of the artworks presented there. These works have also been published as non-fungible tokens and can be purchased directly through this website."
+      }
     }
   },
   "contact": {

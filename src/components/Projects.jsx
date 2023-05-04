@@ -20,6 +20,7 @@ export default function Projects() {
         <p className='text-xl tracking-widest uppercase text-primary'>
           {t('projects.title')}
         </p>
+        <p></p>
         <h2 className='py-4'> {t('projects.subtitle')}</h2>
         <div className='pt-8 flex flex-col gap-8'>
           <ProjectItem

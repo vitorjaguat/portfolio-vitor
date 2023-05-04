@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <div
       id='contact'
-      className='w-full h-full  bg-gradient-to-b from-transparent to-orange-200'
+      className='w-full h-full  bg-gradient-to-b to-transparent from-orange-100'
     >
       <div className='max-w-[1240px] m-auto px-2 py-20 w-full'>
         <p className='text-xl tracking-widest uppercase text-primary'>
