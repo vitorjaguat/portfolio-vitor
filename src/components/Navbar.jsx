@@ -16,6 +16,7 @@ import LanguageToggle from './LanguageToggle';
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [projectTypes, setProjectTypes] = useState(false);
   const { t } = useTranslation('common');
 
   useEffect(() => {
@@ -37,8 +38,8 @@ export default function Navbar() {
     <div
       className={
         shadow
-          ? 'fixed top-0 left-0 w-full h-16 shadow-md ease-in z-10 duration-300 bg-[#FFF7ED] opacity-90 overflow-x-hidden'
-          : 'fixed top-0 left-0 z-10 w-full overflow-x-hidden h-16 ease-in duration-200'
+          ? 'fixed top-0 left-0 w-full h-16 shadow-md ease-in z-10 duration-300 bg-[#FFF7ED] opacity-90'
+          : 'fixed top-0 left-0 z-10 w-full h-16 ease-in duration-200'
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2'>
@@ -68,11 +69,20 @@ export default function Navbar() {
                 {t('navbar.skills')}
               </li>
             </Link>
-            <Link href='/#projects' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
-                {t('navbar.projects')}
-              </li>
-            </Link>
+
+            <li className='group ml-10 text-sm uppercase hover:border-b '>
+              <Link href='/#projects' scroll={false}>
+                <div className=''>{t('navbar.projects')}</div>
+              </Link>
+              <div className='absolute lowercase hidden group-hover:block'>
+                <Link href='/#authorial'>
+                  <div className='py-2'>autorais</div>
+                </Link>
+                <Link href='/#commissioned'>
+                  <div className=''>comissionados</div>
+                </Link>
+              </div>
+            </li>
             <Link href='/#contact' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.contact')}
@@ -90,6 +100,7 @@ export default function Navbar() {
 
       {/* overlay */}
       <div
+        onClick={handleNav}
         className={
           nav
             ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70 ease-in transition-all duration-500'
@@ -100,24 +111,18 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? 'fixed left-0 top-0 w-[45%] h-screen flex flex-col justify-between bg-orange-50 p-10 ease-in duration-500'
-            : 'fixed w-[45%] h-screen flex flex-col justify-between bg-orange-50 top-0 left-[-100%] p-10 ease-in duration-500'
+            ? 'fixed left-0 bottom-0 w-[45%] h-fit flex flex-col justify-between bg-orange-50 p-10 ease-in duration-500 rounded-tr-lg'
+            : 'fixed w-[45%] h-fit flex flex-col justify-between bg-orange-50 bottom-0 left-[-100%] p-10 ease-in duration-500 rounded-tr-lg'
         }
       >
         <div>
           <div className='flex w-full items-center justify-between'>
-            <Link href='/#home' scroll={false}>
-              {/* <Image
-                  src='/../public/assets/logoH2.png'
-                  width={60}
-                  height={35}
-                  alt='logo'
-                /> */}
+            {/* <Link href='/#home' scroll={false}>
               <p className='font-bold'>vitorb.</p>
-            </Link>
+            </Link> */}
             <div
               onClick={handleNav}
-              className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer'
+              className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer absolute right-0 top-0'
             >
               <GrFormClose size={20} />
             </div>
@@ -154,7 +159,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className=''>
+        {/* <div className='w-full'>
           <p className='uppercase text-sm tracking-widest text-orange-700'>
             JOIN ME AT
           </p>
@@ -196,7 +201,7 @@ export default function Navbar() {
               </div>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

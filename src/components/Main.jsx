@@ -95,7 +95,7 @@ export default function Main(props) {
         <div className='absolute bottom-[2%] sm:bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover'>
           <svg
             // height='100%'
-            className='w-[1400px] translate-x-[-300px] md:w-screen overflow-x-hidden '
+            className='w-[1400px] translate-x-[-300px] md:translate-x-0 md:w-screen overflow-x-hidden '
             // className='w-screen mt-[100px]'
             stroke-miterlimit='10'
             style={{
