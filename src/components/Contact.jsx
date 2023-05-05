@@ -20,6 +20,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [showCaptcha, setShowCaptcha] = useState(true);
 
   //send e-mail:
   const form = useRef();
@@ -206,6 +207,20 @@ export default function Contact() {
             </div>
           </Link>
         </div>
+      </div>
+      <div
+        className={`${
+          showCaptcha ? 'block' : 'hidden'
+        } w-screen h-screen flex justify-center items-center`}
+      >
+        <form action='?' method='POST'>
+          <div
+            class='g-recaptcha'
+            data-sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
+          ></div>
+          <br />
+          <input type='submit' value='Submit' />
+        </form>
       </div>
     </div>
   );

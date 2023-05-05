@@ -48,6 +48,12 @@ const App = ({ Component, pageProps }) => {
         <meta property='og:image:height' content='630' />
         <meta property='og:type' content='article' />
         <meta property='og:locale' content='en_US' />
+        {/* reCAPTCHA */}
+        <script
+          src='https://www.google.com/recaptcha/api.js'
+          async
+          defer
+        ></script>
       </Head>
       <main
         className={`${signika.variable} font-signika w-full overflow-x-hidden`}
