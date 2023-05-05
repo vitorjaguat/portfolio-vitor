@@ -70,6 +70,8 @@
     "label-email": "e-mail",
     "label-subject": "assunto",
     "label-message": "mensagem",
-    "button": "enviar"
+    "button": "enviar",
+    "success-message": "Pronto! Sua mensagem foi enviada para o meu e-mail. Vou respondê-la o mais breve possível.",
+    "error-message": "Houve um erro no envio da sua mensagem. Você pode entrar em contato diretamente comigo pelos canais na aba CONTATO."
   }
 }

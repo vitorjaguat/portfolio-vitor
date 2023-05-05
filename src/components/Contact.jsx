@@ -10,11 +10,44 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import contactImg from '../../public/assets/contact.avif';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 export default function Contact() {
   const { t } = useTranslation('common');
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   //send e-mail:
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_jh4yfos',
+        'template_9aw8slr',
+        form.current,
+        'Z_jK-N7VEgX46nN8P'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setName('');
+          setPhone('');
+          setEmail('');
+          setSubject('');
+          setMessage('');
+          alert(t('contact.success-message'));
+        },
+        (error) => {
+          console.log(error.text);
+          alert(t('contact.error-message'));
+        }
+      );
+  };
 
   return (
     <div
@@ -86,7 +119,7 @@ export default function Contact() {
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>
@@ -95,6 +128,9 @@ export default function Contact() {
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
+                      name='from_name'
+                      id='from_name'
+                      required
                     />
                   </div>
                   <div className='flex flex-col'>
@@ -104,6 +140,9 @@ export default function Contact() {
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
+                      name='from_phone'
+                      id='from_phone'
+                      required
                     />
                   </div>
                 </div>
@@ -113,7 +152,10 @@ export default function Contact() {
                   </label>
                   <input
                     type='email'
+                    name='reply_to'
+                    id='reply_to'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -122,7 +164,10 @@ export default function Contact() {
                   </label>
                   <input
                     type='text'
+                    name='subject'
+                    id='subject'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -132,6 +177,9 @@ export default function Contact() {
                   <textarea
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows='10'
+                    name='message'
+                    id='message'
+                    required
                   />
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>
