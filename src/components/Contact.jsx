@@ -130,6 +130,8 @@ export default function Contact() {
                       type='text'
                       name='from_name'
                       id='from_name'
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
                       required
                     />
                   </div>
@@ -143,6 +145,8 @@ export default function Contact() {
                       name='from_phone'
                       id='from_phone'
                       required
+                      onChange={(e) => setPhone(e.target.value)}
+                      value={phone}
                     />
                   </div>
                 </div>
@@ -156,6 +160,8 @@ export default function Contact() {
                     id='reply_to'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     required
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -168,6 +174,8 @@ export default function Contact() {
                     id='subject'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     required
+                    onChange={(e) => setSubject(e.target.value)}
+                    value={subject}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -180,6 +188,8 @@ export default function Contact() {
                     name='message'
                     id='message'
                     required
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
                   />
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>
