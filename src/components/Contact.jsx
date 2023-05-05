@@ -12,6 +12,7 @@ import Image from 'next/image';
 import contactImg from '../../public/assets/contact.avif';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
   const { t } = useTranslation('common');
@@ -25,17 +26,14 @@ export default function Contact() {
   //send e-mail:
   const form = useRef();
   const refCaptcha = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const token = refCaptcha.current.value;
-    console.log(token);
+  const sendEmail = (captchaValue) => {
     const params = {
       name,
       phone,
       email,
       subject,
       message,
-      'g-recaptcha-response': token,
+      'g-recaptcha-response': captchaValue,
     };
     // console.log(form.current);
     emailjs
@@ -43,8 +41,8 @@ export default function Contact() {
         'service_jh4yfos',
         'template_9aw8slr',
         form.current,
-        'Z_jK-N7VEgX46nN8P',
-        'g-recaptcha-response'
+        'Z_jK-N7VEgX46nN8P'
+        // 'g-recaptcha-response'
       )
       .then(
         (result) => {
@@ -132,91 +130,100 @@ export default function Contact() {
           </div>
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
-            <div className='p-4'>
-              <form ref={form} onSubmit={sendEmail}>
-                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                  <div className='flex flex-col'>
+            {!showCaptcha && (
+              <div className='p-4'>
+                <form
+                  ref={form}
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setShowCaptcha(true);
+                  }}
+                >
+                  <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                    <div className='flex flex-col'>
+                      <label className='uppercase text-sm py-2'>
+                        {t('contact.label-name')}
+                      </label>
+                      <input
+                        className='border-2 rounded-lg p-3 flex border-gray-300'
+                        type='text'
+                        name='from_name'
+                        id='from_name'
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        required
+                      />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='uppercase text-sm py-2'>
+                        {t('contact.label-phone')}
+                      </label>
+                      <input
+                        className='border-2 rounded-lg p-3 flex border-gray-300'
+                        type='text'
+                        name='from_phone'
+                        id='from_phone'
+                        required
+                        onChange={(e) => setPhone(e.target.value)}
+                        value={phone}
+                      />
+                    </div>
+                  </div>
+                  <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>
-                      {t('contact.label-name')}
+                      {t('contact.label-email')}
                     </label>
                     <input
+                      type='email'
+                      name='reply_to'
+                      id='reply_to'
                       className='border-2 rounded-lg p-3 flex border-gray-300'
-                      type='text'
-                      name='from_name'
-                      id='from_name'
-                      onChange={(e) => setName(e.target.value)}
-                      value={name}
                       required
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
                     />
                   </div>
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>
-                      {t('contact.label-phone')}
+                      {t('contact.label-subject')}
                     </label>
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
-                      name='from_phone'
-                      id='from_phone'
+                      name='subject'
+                      id='subject'
+                      className='border-2 rounded-lg p-3 flex border-gray-300'
                       required
-                      onChange={(e) => setPhone(e.target.value)}
-                      value={phone}
+                      onChange={(e) => setSubject(e.target.value)}
+                      value={subject}
                     />
                   </div>
-                </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
-                    {t('contact.label-email')}
-                  </label>
-                  <input
-                    type='email'
-                    name='reply_to'
-                    id='reply_to'
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
-                    required
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                  />
-                </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
-                    {t('contact.label-subject')}
-                  </label>
-                  <input
-                    type='text'
-                    name='subject'
-                    id='subject'
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
-                    required
-                    onChange={(e) => setSubject(e.target.value)}
-                    value={subject}
-                  />
-                </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
-                    {t('contact.label-message')}
-                  </label>
-                  <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300'
-                    rows='10'
-                    name='message'
-                    id='message'
-                    required
-                    onChange={(e) => setMessage(e.target.value)}
-                    value={message}
-                  />
-                </div>
-                <div
-                  class='g-recaptcha'
-                  data-sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
-                  ref={refCaptcha}
-                ></div>
-                <br />
-                <button className='w-full p-4 text-gray-100 mt-4'>
-                  {t('contact.button')}
-                </button>
-              </form>
-            </div>
+                  <div className='flex flex-col py-2'>
+                    <label className='uppercase text-sm py-2'>
+                      {t('contact.label-message')}
+                    </label>
+                    <textarea
+                      className='border-2 rounded-lg p-3 border-gray-300'
+                      rows='10'
+                      name='message'
+                      id='message'
+                      required
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={message}
+                    />
+                  </div>
+
+                  <button className='w-full p-4 text-gray-100 mt-4'>
+                    {t('contact.button')}
+                  </button>
+                </form>
+              </div>
+            )}
+            {showCaptcha && (
+              <ReCAPTCHA
+                sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
+                onChange={sendEmail}
+              />
+            )}
           </div>
         </div>
         <div className='flex justify-center pb-5 mt-[200px]'>
