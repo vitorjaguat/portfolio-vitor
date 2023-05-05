@@ -27,20 +27,27 @@ export default function Contact() {
   const form = useRef();
   const refCaptcha = useRef();
   const sendEmail = (captchaValue) => {
-    const params = {
-      name,
-      phone,
-      email,
-      subject,
-      message,
-      'g-recaptcha-response': captchaValue,
-    };
+    // const params = {
+    //   name,
+    //   phone,
+    //   email,
+    //   subject,
+    //   message,
+    //   'g-recaptcha-response': captchaValue,
+    // };
     // console.log(form.current);
     emailjs
-      .sendForm(
+      .send(
         'service_jh4yfos',
         'template_9aw8slr',
-        form.current,
+        {
+          from_name: name,
+          from_phone: phone,
+          reply_to: email,
+          subject,
+          message,
+          'g-recaptcha-response': captchaValue,
+        },
         'Z_jK-N7VEgX46nN8P',
         'g-recaptcha-response'
       )
