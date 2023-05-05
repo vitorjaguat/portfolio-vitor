@@ -138,100 +138,106 @@ export default function Contact() {
           </div>
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
-            {!showCaptcha && (
-              <div className='p-4'>
-                <form
-                  ref={form}
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setShowCaptcha(true);
-                  }}
-                >
-                  <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>
-                        {t('contact.label-name')}
-                      </label>
-                      <input
-                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                        type='text'
-                        name='from_name'
-                        id='from_name'
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
-                        required
-                      />
-                    </div>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>
-                        {t('contact.label-phone')}
-                      </label>
-                      <input
-                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                        type='text'
-                        name='from_phone'
-                        id='from_phone'
-                        required
-                        onChange={(e) => setPhone(e.target.value)}
-                        value={phone}
-                      />
-                    </div>
-                  </div>
-                  <div className='flex flex-col py-2'>
+            <div className='p-4'>
+              <form
+                ref={form}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setShowCaptcha(true);
+                }}
+              >
+                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                  <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>
-                      {t('contact.label-email')}
+                      {t('contact.label-name')}
                     </label>
                     <input
-                      type='email'
-                      name='reply_to'
-                      id='reply_to'
                       className='border-2 rounded-lg p-3 flex border-gray-300'
-                      required
-                      onChange={(e) => setEmail(e.target.value)}
-                      value={email}
-                    />
-                  </div>
-                  <div className='flex flex-col py-2'>
-                    <label className='uppercase text-sm py-2'>
-                      {t('contact.label-subject')}
-                    </label>
-                    <input
                       type='text'
-                      name='subject'
-                      id='subject'
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      name='from_name'
+                      id='from_name'
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
                       required
-                      onChange={(e) => setSubject(e.target.value)}
-                      value={subject}
                     />
                   </div>
-                  <div className='flex flex-col py-2'>
+                  <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>
-                      {t('contact.label-message')}
+                      {t('contact.label-phone')}
                     </label>
-                    <textarea
-                      className='border-2 rounded-lg p-3 border-gray-300'
-                      rows='10'
-                      name='message'
-                      id='message'
+                    <input
+                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      type='text'
+                      name='from_phone'
+                      id='from_phone'
                       required
-                      onChange={(e) => setMessage(e.target.value)}
-                      value={message}
+                      onChange={(e) => setPhone(e.target.value)}
+                      value={phone}
                     />
                   </div>
+                </div>
+                <div className='flex flex-col py-2'>
+                  <label className='uppercase text-sm py-2'>
+                    {t('contact.label-email')}
+                  </label>
+                  <input
+                    type='email'
+                    name='reply_to'
+                    id='reply_to'
+                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                </div>
+                <div className='flex flex-col py-2'>
+                  <label className='uppercase text-sm py-2'>
+                    {t('contact.label-subject')}
+                  </label>
+                  <input
+                    type='text'
+                    name='subject'
+                    id='subject'
+                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    required
+                    onChange={(e) => setSubject(e.target.value)}
+                    value={subject}
+                  />
+                </div>
+                <div className='flex flex-col py-2'>
+                  <label className='uppercase text-sm py-2'>
+                    {t('contact.label-message')}
+                  </label>
+                  <textarea
+                    className='border-2 rounded-lg p-3 border-gray-300'
+                    rows='10'
+                    name='message'
+                    id='message'
+                    required
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
+                  />
+                </div>
 
+                {!showCaptcha ? (
                   <button className='w-full p-4 text-gray-100 mt-4'>
                     {t('contact.button')}
                   </button>
-                </form>
-              </div>
-            )}
-            {showCaptcha && (
+                ) : (
+                  <ReCAPTCHA
+                    sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
+                    onChange={sendEmail}
+                  />
+                )}
+              </form>
+            </div>
+
+            {/* {showCaptcha && (
               <ReCAPTCHA
                 sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
                 onChange={sendEmail}
               />
-            )}
+            )} */}
           </div>
         </div>
         <div className='flex justify-center pb-5 mt-[200px]'>
