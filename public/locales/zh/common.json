@@ -61,6 +61,8 @@
     "label-email": "电子邮件",
     "label-subject": "主题",
     "label-message": "留言",
-    "button": "发送"
+    "button": "发送",
+    "success-message": "很好！您的消息已经发送到我的电子邮件。我会尽快回复。",
+    "error-message": "您的留言发送时出现错误。 您可以通过“联系”选项卡中的其他方式直接与我联系。"
   }
 }

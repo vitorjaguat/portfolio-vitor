@@ -69,6 +69,8 @@
     "label-email": "e-mail",
     "label-subject": "subject",
     "label-message": "message",
-    "button": "send"
+    "button": "send",
+    "success-message": "Great! Your message has been sent to my email. I will answer as soon as possible.",
+    "error-message": "There was an error sending your message. You can contact me directly through the channels listed in the CONTACT tab."
   }
 }

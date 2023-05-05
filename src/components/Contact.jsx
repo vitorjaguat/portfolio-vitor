@@ -64,6 +64,7 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
+          setShowCaptcha(false);
           alert(t('contact.error-message'));
         }
       );
@@ -148,7 +149,10 @@ export default function Contact() {
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
+                    <label
+                      className='uppercase text-sm py-2'
+                      htmlFor='from_name'
+                    >
                       {t('contact.label-name')}
                     </label>
                     <input
@@ -162,7 +166,10 @@ export default function Contact() {
                     />
                   </div>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
+                    <label
+                      className='uppercase text-sm py-2'
+                      htmlFor='from_phone'
+                    >
                       {t('contact.label-phone')}
                     </label>
                     <input
@@ -177,7 +184,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
+                  <label className='uppercase text-sm py-2' htmlFor='reply_to'>
                     {t('contact.label-email')}
                   </label>
                   <input
@@ -191,7 +198,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
+                  <label className='uppercase text-sm py-2' htmlFor='subject'>
                     {t('contact.label-subject')}
                   </label>
                   <input
@@ -205,7 +212,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>
+                  <label className='uppercase text-sm py-2' htmlFor='message'>
                     {t('contact.label-message')}
                   </label>
                   <textarea
