@@ -21,7 +21,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  const [showCaptcha, setShowCaptcha] = useState(true);
+  const [showCaptcha, setShowCaptcha] = useState(false);
 
   //send e-mail:
   const form = useRef();
@@ -41,8 +41,8 @@ export default function Contact() {
         'service_jh4yfos',
         'template_9aw8slr',
         form.current,
-        'Z_jK-N7VEgX46nN8P'
-        // 'g-recaptcha-response'
+        'Z_jK-N7VEgX46nN8P',
+        'g-recaptcha-response'
       )
       .then(
         (result) => {
@@ -52,6 +52,7 @@ export default function Contact() {
           setEmail('');
           setSubject('');
           setMessage('');
+          setShowCaptcha(false);
           alert(t('contact.success-message'));
         },
         (error) => {
