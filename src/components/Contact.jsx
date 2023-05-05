@@ -24,14 +24,27 @@ export default function Contact() {
 
   //send e-mail:
   const form = useRef();
+  const refCaptcha = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    const token = refCaptcha.current.value;
+    console.log(token);
+    const params = {
+      name,
+      phone,
+      email,
+      subject,
+      message,
+      'g-recaptcha-response': token,
+    };
+    // console.log(form.current);
     emailjs
       .sendForm(
         'service_jh4yfos',
         'template_9aw8slr',
         form.current,
-        'Z_jK-N7VEgX46nN8P'
+        'Z_jK-N7VEgX46nN8P',
+        'g-recaptcha-response'
       )
       .then(
         (result) => {
@@ -193,6 +206,12 @@ export default function Contact() {
                     value={message}
                   />
                 </div>
+                <div
+                  class='g-recaptcha'
+                  data-sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
+                  ref={refCaptcha}
+                ></div>
+                <br />
                 <button className='w-full p-4 text-gray-100 mt-4'>
                   {t('contact.button')}
                 </button>
@@ -208,12 +227,12 @@ export default function Contact() {
           </Link>
         </div>
       </div>
-      <div
+      {/* <div
         className={`${
           showCaptcha ? 'block' : 'hidden'
         } w-screen h-screen flex justify-center items-center`}
       >
-        <form action='?' method='POST'>
+        <form ref={refCaptcha} action='?' method='POST'>
           <div
             class='g-recaptcha'
             data-sitekey='6LfEN-UlAAAAACq29Rcdp7A2H8653ouyOjP5-ykJ'
@@ -221,7 +240,7 @@ export default function Contact() {
           <br />
           <input type='submit' value='Submit' />
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }
