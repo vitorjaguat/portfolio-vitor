@@ -112,6 +112,9 @@ export default function Navbar() {
             ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70 ease-in transition-all duration-500'
             : 'fixed left-0 top-0 opacity-0 w-full h-full bg-transparent hidden ease-in transition-all duration-500'
         }
+        style={{
+          cursor: nav ? 'url(../../public/assets/close.svg) 15 15' : 'auto',
+        }}
       />
       {/* sidebar */}
       <div
@@ -121,19 +124,15 @@ export default function Navbar() {
             : 'fixed w-[45%] h-fit flex flex-col justify-between bg-orange-50 bottom-0 left-[-100%] p-10 ease-in duration-500 rounded-tr-lg'
         }
       >
-        <div>
-          <div className='flex w-full items-center justify-between'>
-            {/* <Link href='/#home' scroll={false}>
-              <p className='font-bold'>vitorb.</p>
-            </Link> */}
-            <div
-              onClick={handleNav}
-              className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer absolute right-0 top-0'
-            >
-              <GrFormClose size={20} />
-            </div>
+        {/* <div className='flex w-full items-center justify-between'>
+          
+          <div
+            onClick={handleNav}
+            className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer absolute right-0 top-0'
+          >
+            <GrFormClose size={20} />
           </div>
-        </div>
+        </div>  */}
 
         <div className='flex flex-col justify-center'>
           <ul className='uppercase'>
@@ -161,18 +160,29 @@ export default function Navbar() {
                 {t('navbar.skills')}
               </li>
             </Link>
-            <Link href='/#projects' scroll={false}>
-              <li
-                onClick={() => setNav(false)}
-                className='relative py-4 text-sm hover:text-orange-900 group'
-              >
-                {t('navbar.projects')}
-                <div className='absolute top-0 group-hover:translate-x-20 group-hover:h-auto h-0 overflow-hidden -translate-x-80 duration-300'>
-                  <div className='lowercase '>- autorais</div>
-                  <div className='lowercase'>- comissionados</div>
+
+            <li
+              onClick={() => setNav(false)}
+              className='relative py-4 text-sm  group'
+            >
+              <Link href='/#authorial' scroll={false}>
+                <div className='hover:text-orange-900'>
+                  {t('navbar.projects')}
                 </div>
-              </li>
-            </Link>
+              </Link>
+              <div className='top-0 group-hover:translate-x-0 group-hover:h-auto h-0 overflow-hidden -translate-x-80 duration-300'>
+                <Link href='/#authorial' scroll={false}>
+                  <div className='lowercase hover:text-orange-900'>
+                    - {t('navbar.authorial')}
+                  </div>
+                </Link>
+                <Link href='/#commissioned' scroll={false}>
+                  <div className='lowercase hover:text-orange-900'>
+                    - {t('navbar.commissioned')}
+                  </div>
+                </Link>
+              </div>
+            </li>
             <Link href='/#contact' scroll={false}>
               <li
                 onClick={() => setNav(false)}
