@@ -42,6 +42,10 @@
       "hanzi": {
         "title": "Hanzi Draw",
         "text": "This is a web application to practice manual writing of hanzi (Chinese characters). The user can input any Chinese character and practice writing it using a mouse pointer, touch, or trackpad. There is also an option to choose character lists according to the language learner's proficiency level. The drawing happens smoothly and with pressure sensitivity, promoting enjoyment and creativity during learning."
+      },
+      "square": {
+        "title": "Square Wave - company/project website",
+        "text": "Company or project website. Every time the user navigates from one page to another, it's done through an animation of the page elements. Both the form and content of the site (a fictional design company called Square Wave) were based on the square geometric shape."
       }
     },
     "commissioned": {

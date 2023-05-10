@@ -2,9 +2,7 @@ import blogImg from '../../public/assets/projects/blog.png';
 import donadaImg from '../../public/assets/projects/donada.jpg';
 import hanziImg from '../../public/assets/projects/hanzi.png';
 import moreabstractImg from '../../public/assets/projects/moreabstract.png';
-import cryptoImg from '../../public/assets/projects/crypto.jpeg';
-import twitchImg from '../../public/assets/projects/twitch.jpeg';
-import netflixImg from '../../public/assets/projects/netflix.jpeg';
+import squareImg from '../../public/assets/projects/square.png';
 import ProjectItem from './ProjectItem';
 import { useTranslation } from 'next-i18next';
 
@@ -25,6 +23,13 @@ export default function Projects2() {
           <h2 className='py-4'> {t('projects.authorial.subtitle')}</h2>
           <div className='pt-8 flex flex-col gap-8'>
             <ProjectItem
+              title={t('projects.authorial.hanzi.title')}
+              backgroundImg={hanziImg}
+              projectUrl='/projects/hanzi'
+              text={t('projects.authorial.hanzi.text')}
+            />
+
+            <ProjectItem
               title={t('projects.authorial.blog.title')}
               backgroundImg={blogImg}
               projectUrl='/projects/blog'
@@ -32,10 +37,10 @@ export default function Projects2() {
             />
 
             <ProjectItem
-              title={t('projects.authorial.hanzi.title')}
-              backgroundImg={hanziImg}
-              projectUrl='/projects/hanzi'
-              text={t('projects.authorial.hanzi.text')}
+              title={t('projects.authorial.square.title')}
+              backgroundImg={squareImg}
+              projectUrl='/projects/square'
+              text={t('projects.authorial.square.text')}
             />
           </div>
         </div>

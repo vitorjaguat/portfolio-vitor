@@ -42,6 +42,10 @@
       "hanzi": {
         "title": "Hanzi Draw",
         "text": "Uma aplicação web para treinar a escrita manual de hanzi (caracteres chineses). A pessoa usuária pode inserir qualquer caractere chinês e praticar a escrita usando o ponteiro do mouse, o toque ou o trackpad. Há ainda a opção de escolher listas de caracteres conforme o nível de proficiência do estudante de línguas. O desenho acontece de forma fluida e com sensibilidade à pressão, favorecendo o prazer e a criatividade durante o aprendizado."
+      },
+      "square": {
+        "title": "Square Wave - site de empresa/projeto",
+        "text": "Website de uma empresa ou projeto. A cada vez que o usuário sai de uma página e vai para outra, essa passagem se dá através da animação dos elementos da página. Tanto a forma quanto o conteúdo do site (uma empresa fictícia de design chamada Square Wave) foram baseados na forma geométrica quadrada."
       }
     },
 
