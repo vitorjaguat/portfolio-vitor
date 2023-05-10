@@ -73,5 +73,21 @@
     "technical-p5": " ",
     "demo": "site",
     "code": "código"
+  },
+  "square": {
+    "title": "Square Wave - modelo de site de empresa",
+    "small": "Projeto",
+    "summary": "Resumo",
+    "summary-content": "Modelo de site de empresa com animações dos elementos das páginas ao navegar.",
+    "description": "Descrição",
+    "description-p1": "Este é um modelo feito por mim para servir de base ao website de uma empresa ou projeto. Ao chegar no endereço do site, o menu de navegação é carregado com uma animação que, em menos de um segundo, forma a imagem definitiva de um quadrado formado por vários quadrados.",
+    "description-p2": "Alguns desses quadrados menores são links para páginas secundárias, que contêm informações como definição do projeto/empresa, equipe, contato, etc. Para alimentar o site, imaginei uma empresa de design fictícia, com equipe e propostas de atuação.",
+    "description-p3": "Essa é apenas uma entre muitas possibilidades de site contendo animações, e tanto a forma quanto o conteúdo podem ser adaptados conforme a necessidade.",
+    "technical": "Especificações Técnicas",
+    "technical-p1": "O site apresenta animações de elementos disparadas pela navegação. Toda a template é otimizada para uma performance ótima e boa responsividade, em desktop, tablet ou celular.",
+    "technical-p2": "O site tem um estilo minimalista e as animações dão um ar fluido e descontraído. As animações são feitas através de Framer Motion.",
+    "technical-p3": "A estrutura do site foi escrita em Next.js 13, sobre React 18. A fonte utilizada foi carregada do respositório Google Fonts.",
+    "demo": "demo",
+    "code": "código"
   }
 }

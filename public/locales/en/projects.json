@@ -74,6 +74,22 @@
     "demo": "website",
     "code": "code"
   },
+  "square": {
+    "title": "Square Wave - Company Website Template",
+    "small": "Project",
+    "summary": "Summary",
+    "summary-content": "Company website template with animated page elements during navigation.",
+    "description": "Description",
+    "description-p1": "This is a template I created to serve as the basis for a company or project website. When accessing the website address, the navigation menu is loaded with an animation that forms the final image of a square made up of several squares in less than a second.",
+    "description-p2": "Some of these smaller squares are links to secondary pages, which contain information such as project/company description, team, contact, etc. To populate the website, I imagined a fictional design company, with a team and proposals for action.",
+    "description-p3": "This is just one of many possibilities for a website containing animations, and both the form and content can be adapted as needed.",
+    "technical": "Technical Specifications",
+    "technical-p1": "The website features animations of elements triggered by navigation. The entire template is optimized for optimal performance and good responsiveness on desktop, tablet, or mobile.",
+    "technical-p2": "The website has a minimalist style and the animations give it a fluid and relaxed feel. The animations are done using Framer Motion.",
+    "technical-p3": "The website structure was written in Next.js 13, built on React 18. The font used was loaded from the Google Fonts repository.",
+    "demo": "demo",
+    "code": "código"
+  },
   "contact": {
     "label-name": "name",
     "label-phone": "phone",
