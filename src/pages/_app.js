@@ -36,14 +36,14 @@ const App = ({ Component, pageProps }) => {
           name='twitter:description'
           content='Webdevelopment projects and artworks by Vitor Butkus'
         />
-        <meta name='twitter:image' content='/tiger.png' />
+        <meta name='twitter:image' content='/assets.ogimage.png' />
 
         <meta property='og:title' content='Vitor Butkus' />
         <meta
           property='og:description'
           content='Webdevelopment projects and artworks by Vitor Butkus'
         />
-        <meta property='og:image' content='/tiger.png' />
+        <meta property='og:image' content='/assets/ogimage.png' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
         <meta property='og:type' content='article' />
