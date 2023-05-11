@@ -36,7 +36,7 @@ const App = ({ Component, pageProps }) => {
           name='twitter:description'
           content='Webdevelopment projects and artworks by Vitor Butkus'
         />
-        <meta name='twitter:image' content='/assets.ogimage.png' />
+        <meta name='twitter:image' content='/assets/ogimage.png' />
 
         <meta property='og:title' content='Vitor Butkus' />
         <meta
