@@ -71,18 +71,18 @@ export default function Navbar() {
             </Link>
 
             <li className='group ml-10 text-sm uppercase '>
-              <Link href='/#projects' scroll={false}>
+              <Link href='/#authorial' scroll={false}>
                 <div className='hover:text-orange-900'>
                   {t('navbar.projects')}
                 </div>
               </Link>
               <div className='absolute lowercase overflow-hidden  -translate-y-40 group-hover:translate-y-0 transition-all duration-300'>
-                <Link href='/#authorial'>
+                <Link href='/#authorial' scroll={false}>
                   <div className='pt-4 pb-1 hover:text-orange-900'>
                     - {t('navbar.authorial')}
                   </div>
                 </Link>
-                <Link href='/#commissioned'>
+                <Link href='/#commissioned' scroll={false}>
                   <div className=' hover:text-orange-900'>
                     - {t('navbar.commissioned')}
                   </div>

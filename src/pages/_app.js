@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <title>Vitor Butkus</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/tiger.png' />
+        <link rel='icon' href='/assets/favicon.ico' />
 
         <meta name='author' content='Vitor Butkus' />
         <meta

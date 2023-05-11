@@ -48,13 +48,17 @@ export default function Hanzi({}) {
             <div className='py-3'>{t('hanzi.technical-p5')}</div>
           </div>
           <a
-            href='https://github.com/vitorjaguat/donada-v2'
+            href='https://github.com/vitorjaguat/hanzi-draw'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>{t('hanzi.code')}</button>
           </a>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a
+            href='https://hanzi-draw.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <button className='px-8 py-2 mt-4'>{t('hanzi.demo')}</button>
           </a>
         </div>
