@@ -89,6 +89,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </li>
+
             <Link href='/#contact' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
                 {t('navbar.contact')}

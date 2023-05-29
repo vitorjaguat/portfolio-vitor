@@ -32,10 +32,10 @@ export default function About() {
     >
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2 lg:pr-20'>
-          <p className='uppercase text-xl tracking-widest text-primary'>
+          <p className='text-2xl font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
             {t('about.title')}
           </p>
-          <h2 className='py-4'>{t('about.subtitle')}</h2>
+          {/* <h2 className='py-4'>{t('about.subtitle')}</h2> */}
           {/* <p className='py-2 text-gray-600'>{t('about.small')}</p> */}
           <p className='py-2 text-gray-600'>{t('about.p1')}</p>
           <p className='py-2 text-gray-600'>{t('about.p2')}</p>

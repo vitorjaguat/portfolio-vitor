@@ -16,12 +16,11 @@ export default function Projects2() {
         className='w-full bg-gradient-to-b from-orange-100 to-transparent'
       >
         <div className='max-w-[1240px] mx-auto px-2 py-20'>
-          <p className='text-xl tracking-widest uppercase text-primary'>
+          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
             {t('projects.authorial.title')}
           </p>
-          <p></p>
-          <h2 className='py-4'> {t('projects.authorial.subtitle')}</h2>
-          <div className='pt-8 flex flex-col gap-8'>
+          {/* <h2 className='py-4'> {t('projects.authorial.subtitle')}</h2> */}
+          <div className='flex flex-col gap-8'>
             <ProjectItem
               title={t('projects.authorial.hanzi.title')}
               backgroundImg={hanziImg}
@@ -51,12 +50,11 @@ export default function Projects2() {
         className='w-full bg-gradient-to-b to-orange-100 from-transparent'
       >
         <div className='max-w-[1240px] mx-auto px-2 py-20'>
-          <p className='text-xl tracking-widest uppercase text-primary'>
+          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
             {t('projects.commissioned.title')}
           </p>
-          <p></p>
-          <h2 className='py-4'> {t('projects.commissioned.subtitle')}</h2>
-          <div className='pt-8 flex flex-col gap-8'>
+          {/* <h2 className='py-4'> {t('projects.commissioned.subtitle')}</h2> */}
+          <div className='flex flex-col gap-8'>
             <ProjectItem
               title={t('projects.commissioned.donada.title')}
               backgroundImg={donadaImg}

@@ -76,10 +76,10 @@ export default function Contact() {
       className='w-full h-full  bg-gradient-to-b to-transparent from-orange-100'
     >
       <div className='max-w-[1240px] m-auto px-2 py-20 w-full'>
-        <p className='text-xl tracking-widest uppercase text-primary'>
+        <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
           {t('contact.title')}
         </p>
-        <h2 className='py-4'>{t('contact.subtitle')}</h2>
+        {/* <h2 className='py-4'>{t('contact.subtitle')}</h2> */}
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-xl p-4'>

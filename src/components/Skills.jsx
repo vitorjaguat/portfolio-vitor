@@ -31,11 +31,11 @@ export default function Skills() {
       className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100 overflow-hidden'
     >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-primary'>
+        <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
           {t('skills.title')}
         </p>
-        <h2 className='py-4'>{t('skills.subtitle')}</h2>
-        <div className='grid pt-6 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        {/* <h2 className='py-4'>{t('skills.subtitle')}</h2> */}
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Can be refactored into a new component: */}
 
           <div
@@ -44,7 +44,7 @@ export default function Skills() {
               transform: inView1 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 bg-black/5 shadow-md rounded-xl'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -67,7 +67,7 @@ export default function Skills() {
               transform: inView2 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -90,7 +90,7 @@ export default function Skills() {
               transform: inView3 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -113,7 +113,7 @@ export default function Skills() {
               transform: inView4 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -131,7 +131,7 @@ export default function Skills() {
               transform: inView5 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -154,7 +154,7 @@ export default function Skills() {
               transform: inView6 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -177,7 +177,7 @@ export default function Skills() {
               transform: inView7 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -195,7 +195,7 @@ export default function Skills() {
               transform: inView8 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -218,7 +218,7 @@ export default function Skills() {
               transform: inView9 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -241,7 +241,7 @@ export default function Skills() {
               transform: inView10 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -264,7 +264,7 @@ export default function Skills() {
               transform: inView11 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -287,7 +287,7 @@ export default function Skills() {
               transform: inView12 ? 'translateX(0)' : 'translateX(-100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -311,7 +311,7 @@ export default function Skills() {
               transform: inView13 ? 'translateX(0)' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='p-6 shadow-md rounded-xl'
+            className='p-6 shadow-md rounded-xl bg-black/5'
           >
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
