@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "início",
-    "about": "sobre mim",
+    "about": "sobre",
     "skills": "habilidades",
     "projects": "projetos",
     "authorial": "autorais",
@@ -16,7 +16,7 @@
     "text": "Posso transformar suas ideias em realidade usando as habilidades de programação mais modernas e atualizadas"
   },
   "about": {
-    "title": "sobre mim",
+    "title": "sobre",
     "subtitle": "quem sou eu",
     "small": "Começar a auto-apresentação é a parte mais difícil...",
     "p1": "Minha formação de base são as Artes Visuais. Tenho graduação e mestrado em Artes Visuais (habilitação em História da Arte) pela Universidade Federal do Rio Grande do Sul. Já atuei como artista, curador e pesquisador em museus, galerias e outras instituições.",
