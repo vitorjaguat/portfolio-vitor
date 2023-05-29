@@ -5,6 +5,7 @@ import { Signika_Negative } from '@next/font/google';
 import { useRouter } from 'next/router';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Navbar from '@/components/Navbar';
+import { useState } from 'react';
 
 const signika = Signika_Negative({
   subsets: ['latin'],
@@ -15,6 +16,11 @@ const signika = Signika_Negative({
 
 const App = ({ Component, pageProps }) => {
   // const router = useRouter();
+  const [darkMode, setDarkMode] = useState(true);
+  const toggleDarkMode = () => {
+    setDarkMode((curr) => !curr);
+  };
+  console.log(darkMode);
   return (
     <>
       <Head>
@@ -56,10 +62,12 @@ const App = ({ Component, pageProps }) => {
         ></script>
       </Head>
       <main
-        className={`${signika.variable} font-signika w-full overflow-x-hidden`}
+        className={`${signika.variable} font-signika w-full overflow-x-hidden ${
+          darkMode ? 'dark' : ''
+        }`}
       >
         <ParallaxProvider>
-          <Navbar />
+          <Navbar toggleDarkMode={toggleDarkMode} />
           <Component {...pageProps} />
         </ParallaxProvider>
       </main>

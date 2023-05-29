@@ -13,10 +13,10 @@ export default function Projects2() {
     <>
       <div
         id='authorial'
-        className='w-full bg-gradient-to-b from-orange-100 to-transparent'
+        className='w-full bg-gradient-to-b from-orange-100 to-transparent dark:from-zinc-500 dark:to-zinc-600'
       >
         <div className='max-w-[1240px] mx-auto px-2 py-20'>
-          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
+          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 dark:text-orange-300  pb-12'>
             {t('projects.authorial.title')}
           </p>
           {/* <h2 className='py-4'> {t('projects.authorial.subtitle')}</h2> */}
@@ -47,10 +47,10 @@ export default function Projects2() {
 
       <div
         id='commissioned'
-        className='w-full bg-gradient-to-b to-orange-100 from-transparent'
+        className='w-full bg-gradient-to-b to-orange-100 from-transparent dark:from-zinc-600 dark:to-zinc-500'
       >
         <div className='max-w-[1240px] mx-auto px-2 py-20'>
-          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
+          <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 dark:text-orange-300  pb-12'>
             {t('projects.commissioned.title')}
           </p>
           {/* <h2 className='py-4'> {t('projects.commissioned.subtitle')}</h2> */}

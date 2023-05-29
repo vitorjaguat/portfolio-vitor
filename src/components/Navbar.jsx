@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { MdDarkMode } from 'react-icons/md';
 import { GrFormClose } from 'react-icons/gr';
 import {
   FaGithub,
@@ -13,7 +14,7 @@ import {
 import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
 
-export default function Navbar() {
+export default function Navbar({ toggleDarkMode }) {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [projectTypes, setProjectTypes] = useState(false);
@@ -37,9 +38,9 @@ export default function Navbar() {
   return (
     <div
       className={
-        shadow
-          ? 'fixed top-0 left-0 w-full h-16 ease-in z-10 duration-300 bg-[#FFF7ED] opacity-90'
-          : 'fixed top-0 left-0 z-10 w-full h-16 ease-in duration-200'
+        !shadow
+          ? 'fixed top-0 left-0 z-10 w-full h-16 ease-in duration-200 bg-transparent dark:text-white'
+          : 'fixed top-0 left-0 w-full h-16 ease-in z-10 duration-300 bg-[#FFF7ED] dark:text-gray-200 dark:bg-zinc-800 opacity-90'
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2'>
@@ -50,7 +51,9 @@ export default function Navbar() {
             width={50}
             height={50}
           /> */}
-          <p className='font-bold text-orange-900'>vitorb.</p>
+          <p className='font-bold text-orange-900 dark:text-orange-300'>
+            vitorb.
+          </p>
         </Link>
         <div className='hidden md:block'>
           <ul className='hidden md:flex'>
@@ -91,10 +94,17 @@ export default function Navbar() {
             </li>
 
             <Link href='/#contact' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900'>
                 {t('navbar.contact')}
               </li>
             </Link>
+
+            <li
+              className='ml-10 hover:text-orange-900'
+              onClick={() => toggleDarkMode()}
+            >
+              <MdDarkMode />
+            </li>
           </ul>
         </div>
         <div className='text-sm uppercase'>

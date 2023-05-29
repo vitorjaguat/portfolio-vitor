@@ -28,23 +28,23 @@ export default function About() {
   return (
     <div
       id='about'
-      className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent overflow-hidden'
+      className='w-full p-2 flex items-center py-20 bg-gradient-to-b from-orange-100 to-transparent overflow-hidden dark:from-zinc-500 dark:to-zinc-600'
     >
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2 lg:pr-20'>
-          <p className='text-2xl font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
+          <p className='text-2xl font-bold tracking-[10px] uppercase text-orange-900 dark:text-orange-300 pb-12'>
             {t('about.title')}
           </p>
           {/* <h2 className='py-4'>{t('about.subtitle')}</h2> */}
           {/* <p className='py-2 text-gray-600'>{t('about.small')}</p> */}
-          <p className='py-2 text-gray-600'>{t('about.p1')}</p>
-          <p className='py-2 text-gray-600'>{t('about.p2')}</p>
-          <p className='py-2 text-gray-600'>{t('about.p3')}</p>
-          <Link href='/#authorial' scroll={false}>
-            <p className='py-2 text-gray-600 underline cursor-pointer'>
-              {t('about.link')}
-            </p>
-          </Link>
+          <div className='dark:text-gray-200 text-gray-600'>
+            <p className='py-2'>{t('about.p1')}</p>
+            <p className='py-2'>{t('about.p2')}</p>
+            <p className='py-2'>{t('about.p3')}</p>
+            <Link href='/#authorial' scroll={false}>
+              <p className='py-2 underline cursor-pointer'>{t('about.link')}</p>
+            </Link>
+          </div>
         </div>
         <div className='col-span-1 flex justify-center mt-8'>
           <div

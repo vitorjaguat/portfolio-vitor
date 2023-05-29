@@ -34,24 +34,24 @@ export default function Main(props) {
   const { t } = useTranslation('common');
 
   return (
-    <div className='w-screen overflow-x-hidden'>
+    <div className='w-screen overflow-x-hidden bg-transparent dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-500'>
       <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
-            <p className='uppercase text-sm tracking-widest text-gray-600'>
+            <p className='uppercase text-sm tracking-widest text-gray-600 dark:text-gray-400'>
               {t('home.title')}
             </p>
-            <h1 className='py-4 text-orange-900 text-5xl'>
+            <h1 className='py-4 text-orange-900 dark:text-orange-300  text-5xl'>
               {t('home.hi')}
               {/* <span className='text-primary'>{t('home.name')}</span> */}
             </h1>
-            <h1 className='py-2 text-gray-600 text-3xl'>
+            <h1 className='py-2 text-gray-600 dark:text-gray-400 text-3xl'>
               {t('home.subtitle')}
             </h1>
-            <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
+            <p className='py-4 dark:text-gray-200 text-gray-600 max-w-[70%] m-auto'>
               {t('home.text')}
             </p>
-            <div className='flex items-center justify-between max-w-[330px] m-auto py-4 box-border'>
+            <div className='flex items-center justify-between max-w-[330px] m-auto py-4 box-border dark:text-gray-200'>
               <a
                 href='https://github.com/vitorjaguat'
                 target='_blank'

@@ -26,21 +26,21 @@ const LanguageToggle = () => {
   //locale - Optional string, indicates locale of the new page
 
   return (
-    <div className='flex justify-center font-bold uppercase'>
+    <div className='flex dark:text-orange-300 text-orange-900 justify-center font-bold uppercase'>
       <div
-        className='mr-1 text-orange-900 text-sm cursor-pointer px-1 hover:text-inherit'
+        className='mr-1  text-sm cursor-pointer px-1 hover:text-inherit'
         onClick={() => handleLanguageChange('en')}
       >
         en
       </div>
       <div
-        className='mr-1 text-orange-900 text-sm cursor-pointer px-1 hover:text-inherit'
+        className='mr-1  text-sm cursor-pointer px-1 hover:text-inherit'
         onClick={() => handleLanguageChange('pt')}
       >
         pt
       </div>
       <div
-        className='text-orange-900 text-sm cursor-pointer px-1 hover:text-inherit'
+        className=' text-sm cursor-pointer px-1 hover:text-inherit'
         onClick={() => handleLanguageChange('zh')}
       >
         中

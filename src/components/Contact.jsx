@@ -73,10 +73,10 @@ export default function Contact() {
   return (
     <div
       id='contact'
-      className='w-full h-full  bg-gradient-to-b to-transparent from-orange-100'
+      className='w-full h-full  bg-gradient-to-b to-transparent from-orange-100 dark:from-zinc-500 dark:to-zinc-800'
     >
       <div className='max-w-[1240px] m-auto px-2 py-20 w-full'>
-        <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 pb-12'>
+        <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 dark:text-orange-300 pb-12'>
           {t('contact.title')}
         </p>
         {/* <h2 className='py-4'>{t('contact.subtitle')}</h2> */}
