@@ -28,7 +28,7 @@ export default function Skills() {
   return (
     <div
       id='skills'
-      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100 dark:from-zinc-600 dark:to-zinc-500 overflow-hidden'
+      className='w-full p-2 py-20 bg-gradient-to-b from-transparent to-orange-100 dark:from-zinc-600 dark:to-zinc-600 overflow-hidden'
     >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-2xl text-right font-bold tracking-[10px] uppercase text-orange-900 dark:text-orange-300  pb-12'>

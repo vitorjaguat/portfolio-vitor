@@ -110,7 +110,10 @@ export default function Navbar({ toggleDarkMode }) {
         <div className='text-sm uppercase'>
           <LanguageToggle />
         </div>
-        <div onClick={handleNav} className='md:hidden text-orange-900'>
+        <div
+          onClick={handleNav}
+          className='md:hidden text-orange-900 dark:text-orange-300'
+        >
           <AiOutlineMenu size={25} />
         </div>
       </div>
@@ -131,8 +134,8 @@ export default function Navbar({ toggleDarkMode }) {
       <div
         className={
           nav
-            ? 'fixed left-0 bottom-0 w-[45%] h-fit flex flex-col justify-between bg-orange-50 p-10 ease-in duration-500 rounded-tr-lg'
-            : 'fixed w-[45%] h-fit flex flex-col justify-between bg-orange-50 bottom-0 left-[-100%] p-10 ease-in duration-500 rounded-tr-lg'
+            ? 'fixed left-0 bottom-0 w-[45%] h-fit flex flex-col justify-between bg-orange-50 dark:bg-zinc-900 p-10 ease-in duration-500 rounded-tr-lg'
+            : 'fixed w-[45%] h-fit flex flex-col justify-between bg-orange-50 dark:bg-zinc-900 bottom-0 left-[-100%] p-10 ease-in duration-500 rounded-tr-lg'
         }
       >
         {/* <div className='flex w-full items-center justify-between'>

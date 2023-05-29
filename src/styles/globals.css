@@ -46,6 +46,6 @@ html {
   }
 
   button {
-    @apply shadow-md shadow-gray-400 rounded-lg uppercase bg-orange-900 text-gray-300;
+    @apply shadow-sm shadow-black rounded-lg uppercase bg-orange-900 text-gray-300 dark:bg-orange-300 dark:text-zinc-800;
   }
 }

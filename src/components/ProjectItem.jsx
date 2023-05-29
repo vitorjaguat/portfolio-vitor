@@ -11,9 +11,9 @@ export default function ProjectItem({
   // const { t } = useTranslation('common');
 
   return (
-    <div className='grid md:grid-cols-2 bg-[#00000010] p-2 md:p-4 rounded-lg'>
+    <div className='grid md:grid-cols-2 bg-black/5 dark:bg-white/5 p-2 md:p-4 rounded-lg'>
       <Link href={projectUrl}>
-        <div className='h-[280px] md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 hover:border-dashed hover:border-4 hover:opacity-80 hover:scale-95 duration-300'>
+        <div className='h-[280px] md:col-span-1 relative rounded-lg p-4 md:p-2 overflow-hidden hover:border-orange-700 dark:hover:border-orange-300 hover:border-dashed hover:border-4 hover:opacity-80 hover:scale-95 duration-300'>
           <Image
             src={backgroundImg}
             alt={title}
@@ -23,13 +23,15 @@ export default function ProjectItem({
         </div>
       </Link>
 
-      <div className='md:col-span-1 px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between'>
+      <div className='md:col-span-1 px-4 md:px-8 py-4 md:py-2 flex flex-col justify-between dark:text-gray-200'>
         <div className=''>
-          <p className='font-bold text-lg pb-6'>{title}</p>
+          <p className='font-bold text-lg pb-6 dark:text-orange-300'>{title}</p>
           <p>{text}</p>
         </div>
         <Link href={projectUrl}>
-          <p className='text-end text-orange-900'>See more</p>
+          <p className='text-end text-orange-900 dark:text-orange-100 text-sm'>
+            See more
+          </p>
         </Link>
       </div>
     </div>
