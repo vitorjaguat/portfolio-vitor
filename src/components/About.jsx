@@ -53,11 +53,11 @@ export default function About() {
               transform: inView ? 'none' : 'translateX(100%)',
               transition: 'all 1s',
             }}
-            className='w-fit h-fit shadow-md p-2 bg-white shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-100'
+            className='w-fit h-fit p-2 bg-white dark:bg-zinc-300 rounded-md duration-300'
           >
             <Image
-              width={250}
-              className='rounded-xl'
+              width={230}
+              className='rounded-md'
               src={vitorImg}
               alt='Vitor'
             />

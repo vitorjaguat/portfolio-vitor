@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Navbar from '@/components/Navbar';
 import { useState } from 'react';
+import Script from 'next/script';
 
 const signika = Signika_Negative({
   subsets: ['latin'],
@@ -61,8 +62,30 @@ const App = ({ Component, pageProps }) => {
           defer
         ></script>
       </Head>
+      {/* GOOGLE-analytics https://www.makeuseof.com/nextjs-google-analytics/ */}
+      <Script
+        strategy='afterInteractive'
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GANALYTICS}`}
+      />
+      <Script
+        id='google-analytics'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.NEXT_PUBLIC_GANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <main
-        className={`${signika.variable} font-signika w-full overflow-x-hidden ${
+        className={`${
+          signika.variable
+        } font-signika w-full overflow-x-hidden duration-300 ${
           darkMode ? 'dark' : ''
         }`}
       >

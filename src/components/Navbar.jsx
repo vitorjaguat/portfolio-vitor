@@ -58,35 +58,35 @@ export default function Navbar({ toggleDarkMode }) {
         <div className='hidden md:block'>
           <ul className='hidden md:flex'>
             <Link href='/#home' scroll={false}>
-              <li className='text-sm uppercase hover:text-orange-900 '>
+              <li className='text-sm uppercase hover:text-orange-900 dark:hover:text-orange-300'>
                 {t('navbar.home')}
               </li>
             </Link>
             <Link href='/#about' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 dark:hover:text-orange-300'>
                 {t('navbar.about')}
               </li>
             </Link>
             <Link href='/#skills' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:text-orange-900 '>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 dark:hover:text-orange-300'>
                 {t('navbar.skills')}
               </li>
             </Link>
 
             <li className='group ml-10 text-sm uppercase '>
               <Link href='/#authorial' scroll={false}>
-                <div className='hover:text-orange-900'>
+                <div className='hover:text-orange-900 dark:hover:text-orange-300'>
                   {t('navbar.projects')}
                 </div>
               </Link>
               <div className='absolute lowercase overflow-hidden  -translate-y-40 group-hover:translate-y-0 transition-all duration-300'>
                 <Link href='/#authorial' scroll={false}>
-                  <div className='pt-4 pb-1 hover:text-orange-900'>
+                  <div className='pt-4 pb-1 hover:text-orange-900 dark:hover:text-orange-300'>
                     - {t('navbar.authorial')}
                   </div>
                 </Link>
                 <Link href='/#commissioned' scroll={false}>
-                  <div className=' hover:text-orange-900'>
+                  <div className=' hover:text-orange-900 dark:hover:text-orange-300'>
                     - {t('navbar.commissioned')}
                   </div>
                 </Link>
@@ -94,13 +94,13 @@ export default function Navbar({ toggleDarkMode }) {
             </li>
 
             <Link href='/#contact' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:text-orange-900'>
+              <li className='ml-10 text-sm uppercase hover:text-orange-900 dark:hover:text-orange-300'>
                 {t('navbar.contact')}
               </li>
             </Link>
 
             <li
-              className='ml-10 hover:text-orange-900'
+              className='ml-10 hover:text-orange-900 dark:hover:text-orange-300'
               onClick={() => toggleDarkMode()}
             >
               <MdDarkMode />

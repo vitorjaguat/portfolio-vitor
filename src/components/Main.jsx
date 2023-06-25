@@ -34,7 +34,7 @@ export default function Main(props) {
   const { t } = useTranslation('common');
 
   return (
-    <div className='w-screen overflow-x-hidden bg-transparent dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-600'>
+    <div className='w-screen overflow-x-hidden bg-transparent dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-600 duration-300'>
       <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
@@ -92,10 +92,10 @@ export default function Main(props) {
           </div>
         </div>
 
-        <div className='absolute bottom-[2%] sm:bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover dark:text-zinc-200'>
+        <div className='absolute bottom-[2%] sm:bottom-[10%] w-screen overflow-x-hidden overflow-y-hidden object-cover dark:text-zinc-300 duration-300'>
           <svg
             // height='100%'
-            className='w-[1400px] translate-x-[-300px] md:translate-x-0 md:w-screen overflow-x-hidden dark:text-zinc-300'
+            className='w-[1400px] translate-x-[-300px] md:translate-x-0 md:w-screen overflow-x-hidden dark:text-zinc-300 duration-300'
             // className='w-screen mt-[100px]'
             strokeMiterlimit='10'
             style={{
