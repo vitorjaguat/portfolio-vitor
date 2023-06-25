@@ -72,6 +72,25 @@
     "demo": "网站",
     "code": "代码"
   },
+  "cabanagem200": {
+    "title": "cabanagem200.net",
+    "small": "项目",
+    "summary": "摘要",
+    "summary-content": "该网站作为一个数字档案，收录了由Nheenga Cabana项目生成的文本、图像和新闻，汇集了关于Cabanagem起义的参考资料。Cabanagem起义是19世纪发生在巴西北部地区的一次群众起义。",
+    "description": "描述",
+    "description-p1": "cabanagem200 是一个网站，永久展示了由艺术家Giseli Vasconcelos和Pedro Victor Brandão于2022年创作的Nheenga Cabana作品集的文件。该项目由MAM-Rio委托，并作为展览“反抗行为：独立的另类想象”的一部分。该网站作为该项目范围内生成的文本、图像和新闻的数字档案。",
+    "description-p2": "卡巴纳革命（Cabanagem Revolution）是巴西在19世纪君主制时期发生的一次群众起义。它是巴西历史上的主要群众起义之一，然而在历史学中仍然被文献记录得不够充分。艺术家Giseli Vasconcelos和Pedro Victor Brandão利用巴西独立200周年的机会，将卡巴纳革命作为他们概念艺术项目Nheenga Cabana的主题。该项目在MAM-Rio举办的Acts of Revolt: alternative imaginaries on independence展览中展出，由Beatriz Lemos、Keyna Eleison、Pablo Lafuente和Thiago de Paula Souza策展。",
+    "description-p3": "该网站作为一个永久档案，收录了专门为展览创作的一系列材料。这些材料包括：《个人报》（Jornal Pessoal）特刊，其中包含研究员Lúcio Flávio Pinto的文章；通过人工智能生成的图像，基于Lúcio Flávio Pinto的文本；艺术家使用机器学习技术进行研究过程产生的图像；生成这些图像的文本输入；以及国内外媒体发布的有关该项目的新闻文章。",
+    "description-p4": "大部分广泛的材料收藏可在网站的首页上访问，首页被分成几个部分。这种展示方式通过概览引导访问者浏览这一大量的材料。用户还可以访问与项目相关的出版物的PDF版本，可以下载或直接在浏览器中阅读。由人工智能生成的图像可以通过灯箱（lightboxes）详细查看，用户可以放大图像进行细节观察。",
+    "description-p5": "在设计方面，选择了简约和极简主义，以使内容在呈现中脱颖而出。添加了细微的动画效果，并且每个形式决策都是基于与项目作者之前的讨论而作出的。",
+    "technical": "技术规格",
+    "technical-p1": "该项目采用了 React 18 语法编写，利用了 Next.js 13 的路由结构。",
+    "technical-p2": "在网站的每个组件上使用了 Tailwind CSS 进行完整的样式设置，这些组件是专门为该网站定制构建的。",
+    "technical-p3": "该网站完全响应式，为桌面、移动设备和平板用户提供出色的用户体验。所有页面都具有暗色模式和亮色模式版本，可以通过导航栏中的按钮进行切换。",
+    "technical-p4": "",
+    "demo": "网站",
+    "code": "代码"
+  },
   "square": {
     "title": "方波 - 公司网站模板",
     "small": "项目",

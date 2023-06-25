@@ -68,6 +68,13 @@ export default function Projects2() {
               projectUrl='/projects/moreabstract'
               text={t('projects.commissioned.moreabstract.text')}
             />
+
+            <ProjectItem
+              title={t('projects.commissioned.cabanagem200.title')}
+              backgroundImg={cabanagem200Img}
+              projectUrl='/projects/cabanagem200'
+              text={t('projects.commissioned.cabanagem200.text')}
+            />
           </div>
         </div>
       </div>
