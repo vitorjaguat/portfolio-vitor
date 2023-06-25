@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { useEffect } from 'react';
-import blogImg from '../../../public/assets/projects/blog.png';
+import cabanagem200Img from '../../../public/assets/projects/cabanagem200.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import { FiCheck } from 'react-icons/fi';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
-export default function Blog({}) {
+export default function Cabanagem({}) {
   const { t } = useTranslation('projects');
 
   // useEffect(() => {}, []);
@@ -15,15 +15,15 @@ export default function Blog({}) {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative overflow-hidden'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-white/40 z-[3]' />
-        <Image
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] z-[3] bg-[url("/assets/projects/cabanagem200.png")] opacity-30 bg-cover bg-repeat bg-bottom' />
+        {/* <Image
           className='absolute z-1 translate-y-[-190px]'
-          src={blogImg}
+          src={donadaImg}
           alt='screenshots'
-        />
+        /> */}
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-orange-900 z-10 p-2'>
-          <h2 className='py-2'>{t('blog.title')}</h2>
-          <h3>React / Next.js / Tailwind / Firebase</h3>
+          <h2 className='py-2'>{t('cabanagem200.title')}</h2>
+          <h3>React / Next.js / Tailwind</h3>
         </div>
       </div>
 
@@ -31,35 +31,39 @@ export default function Blog({}) {
         <div className='col-span-4'>
           {/* <small>{t('blog.title')}</small> */}
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.summary')} </h2>
-            <div className='py-3'>{t('blog.summary-content')}</div>
+            <h2 className='text-xl'>{t('cabanagem200.summary')} </h2>
+            <div className='py-3'>{t('cabanagem200.summary-content')}</div>
           </div>
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.description')}</h2>
-            <div className='py-3'>{t('blog.description-p1')}</div>
-            <div className='pb-3'>{t('blog.description-p2')}</div>
+            <h2 className='text-xl'>{t('cabanagem200.description')}</h2>
+            <div className='py-3'>{t('cabanagem200.description-p1')}</div>
+            <div className='pb-3'>{t('cabanagem200.description-p2')}</div>
+            <div className='pb-3'>{t('cabanagem200.description-p3')}</div>
+            <div className='pb-3'>{t('cabanagem200.description-p4')}</div>
+            <div className='pb-3'>{t('cabanagem200.description-p5')}</div>
           </div>
           <div className='pb-8'>
-            <h2 className='text-xl'>{t('blog.technical')}</h2>
-            <div className='py-3'>{t('blog.technical-p1')}</div>
-            <div className='pb-3'>{t('blog.technical-p2')}</div>
-            <div className='pb-3'>{t('blog.technical-p3')}</div>
-            <div className='pb-3'>{t('blog.technical-p4')}</div>
-            <div className='pb-3'>{t('blog.technical-p5')}</div>
+            <h2 className='text-xl'>{t('cabanagem200.technical')}</h2>
+            <div className='py-3'>{t('cabanagem200.technical-p1')}</div>
+            <div className='pb-3'>{t('cabanagem200.technical-p2')}</div>
+            <div className='pb-3'>{t('cabanagem200.technical-p3')}</div>
+            <div className='pb-3'>{t('cabanagem200.technical-p4')}</div>
           </div>
           <a
-            href='https://github.com/vitorjaguat/blog-nextjs'
+            href='https://github.com/vitorjaguat/cabanagem200'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4 mr-8'>{t('blog.code')}</button>
+            <button className='px-8 py-2 mt-4 mr-8'>
+              {t('cabanagem200.code')}
+            </button>
           </a>
           <a
-            href='https://blog-nextjs-not.vercel.app/'
+            href='https://www.cabanagem200.net/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4'>{t('blog.demo')}</button>
+            <button className='px-8 py-2 mt-4'>{t('cabanagem200.demo')}</button>
           </a>
         </div>
         <div className='h-fit col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl p-4'>
@@ -69,28 +73,19 @@ export default function Blog({}) {
             </p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'>
+                <FiCheck size={25} className='pr-3' /> React
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
                 <FiCheck size={25} className='pr-3' /> Next.js
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <FiCheck size={25} className='pr-3' /> React JS
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
                 <FiCheck size={25} className='pr-3' /> Tailwind
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <FiCheck size={25} className='pr-3' /> Firebase
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <FiCheck size={25} className='pr-3' /> Framer Motion
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <FiCheck size={25} className='pr-3' /> Markdown
               </p>
             </div>
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>{t('common.technologies')}</p>
+          <p className='underline cursor-pointer'>{t('common.back')}</p>
         </Link>
       </div>
     </div>

@@ -1,4 +1,8 @@
 {
+  "common": {
+    "technologies": "Technologies",
+    "back": "back"
+  },
   "blog": {
     "title": "Collective Blog / Digital Magazine",
     "small": "Project",

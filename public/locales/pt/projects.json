@@ -1,4 +1,8 @@
 {
+  "common": {
+    "technologies": "Tecnologias",
+    "back": "voltar"
+  },
   "blog": {
     "title": "Blog Coletivo / Revista Digital",
     "small": "Projeto",

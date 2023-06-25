@@ -1,4 +1,8 @@
 {
+  "common": {
+    "technologies": "技术",
+    "back": "返回"
+  },
   "blog": {
     "title": "集体博客/数字杂志",
     "small": "项目",

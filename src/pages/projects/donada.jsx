@@ -60,7 +60,9 @@ export default function Donada({}) {
         </div>
         <div className='h-fit col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
-            <p className='text-center font-bold pb-3'>Technologies</p>
+            <p className='text-center font-bold pb-3'>
+              {t('common.technologies')}
+            </p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'>
                 <FiCheck size={25} className='pr-3' /> Vanilla JavaScript
@@ -84,7 +86,7 @@ export default function Donada({}) {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer'>{t('common.back')}</p>
         </Link>
       </div>
     </div>

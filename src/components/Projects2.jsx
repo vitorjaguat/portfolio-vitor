@@ -3,6 +3,7 @@ import donadaImg from '../../public/assets/projects/donada.jpg';
 import hanziImg from '../../public/assets/projects/hanzi.png';
 import moreabstractImg from '../../public/assets/projects/moreabstract.png';
 import squareImg from '../../public/assets/projects/square.png';
+import cabanagem200Img from '../../public/assets/projects/cabanagem200.png';
 import ProjectItem from './ProjectItem';
 import { useTranslation } from 'next-i18next';
 
