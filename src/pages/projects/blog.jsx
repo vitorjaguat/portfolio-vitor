@@ -90,7 +90,7 @@ export default function Blog({}) {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>{t('common.technologies')}</p>
+          <p className='underline cursor-pointer'>{t('common.back')}</p>
         </Link>
       </div>
     </div>
