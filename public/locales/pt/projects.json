@@ -51,10 +51,9 @@
     "description-p5": "O website é simples e intuitivo, com uma interface de usuário limpa e fácil de usar. Ele é uma ótima ferramenta para aqueles que estão aprendendo chinês ou para aqueles que desejam praticar a escrita de caracteres chineses de uma maneira divertida e interativa.",
     "technical": "Especificações Técnicas",
     "technical-p1": "O projeto foi escrito na sintaxe do React 18, usando a estrutura de rotas do Next.js 13.",
-    "technical-p2": "Além disso, foram usadas dependências carregadas do repositório NPM, tais como hanzi-write, perfect-freehand e react-icons.",
-    "technical-p3": "O site é totalmente responsivo, podendo fornecer uma ótima experiência para usuários em desktop, mobile ou tablet.",
-    "technical-p4": "Em breve, pretendo adicionar o recurso de login, dessa forma os usuários poderão criar uma conta pessoal, favoritar suas listas de caracteres preferidos, salvar desenhos, etc.",
-    "technical-p5": " ",
+    "technical-p2": "O site é totalmente responsivo, podendo fornecer uma ótima experiência para usuários em desktop, mobile ou tablet.",
+    "technical-p3": "Em breve, pretendo adicionar o recurso de login, dessa forma os usuários poderão criar uma conta pessoal, favoritar suas listas de caracteres preferidos, salvar desenhos, etc.",
+    "technical-p4": " ",
     "demo": "demo",
     "code": "código"
   },
