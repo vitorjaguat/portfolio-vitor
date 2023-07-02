@@ -44,23 +44,21 @@ export default function Hanzi({}) {
             <div className='py-3'>{t('hanzi.technical-p1')}</div>
             <div className='py-3'>{t('hanzi.technical-p2')}</div>
             <div className='py-3'>{t('hanzi.technical-p3')}</div>
-            <div className='py-3'>{t('hanzi.technical-p4')}</div>
-            <div className='py-3'>{t('hanzi.technical-p5')}</div>
           </div>
           <div className='flex justify-center'>
-            <a
+            {/* <a
               href='https://github.com/vitorjaguat/hanzi-draw'
               target='_blank'
               rel='noreferrer'
             >
               <button className='px-8 py-2 mt-4 mr-8'>{t('hanzi.code')}</button>
-            </a>
+            </a> */}
             <a
               href='https://hanzi-draw.vercel.app/'
               target='_blank'
               rel='noreferrer'
             >
-              <button className='px-8 py-2 mt-4'>{t('hanzi.demo')}</button>
+              <button className='py-2 mt-4'>{t('hanzi.demo')}</button>
             </a>
           </div>
         </div>
