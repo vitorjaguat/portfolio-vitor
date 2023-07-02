@@ -58,7 +58,7 @@ export default function Hanzi({}) {
               target='_blank'
               rel='noreferrer'
             >
-              <button className='py-2 mt-4'>{t('hanzi.demo')}</button>
+              <button className='px-8 py-2 mt-4'>{t('hanzi.demo')}</button>
             </a>
           </div>
         </div>
