@@ -51,22 +51,30 @@ export default function Main(props) {
             <p className='py-4 dark:text-gray-200 text-gray-600 max-w-[70%] m-auto'>
               {t('home.text')}
             </p>
+            <a
+              href='https://uint.studio'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mb-2 mt-4 dark:text-red-600 text-red-600 max-w-[70%] m-auto'
+            >
+              {t('home.text-update')}
+            </a>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4 box-border dark:text-gray-200'>
               <a
                 href='https://github.com/vitorjaguat'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-300 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaGithub size={18} />
                 </div>
               </a>
               <a
-                href='https://www.instagram.com/mtc.cultura/'
+                href='https://www.instagram.com/uint.studio/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-300 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaInstagram size={18} />
                 </div>
               </a>
@@ -75,17 +83,8 @@ export default function Main(props) {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
+                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-300 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
                   <FaTelegramPlane size={18} />
-                </div>
-              </a>
-              <a
-                href='https://wa.me/5511989417369'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div className='rounded-full shadow-lg p-4 cursor-pointer hover:border-2 hover:border-dashed hover:border-orange-800 hover:scale-110 ease-in duration-500 box-border h-[50px] flex items-center'>
-                  <FaWhatsapp size={18} />
                 </div>
               </a>
             </div>
